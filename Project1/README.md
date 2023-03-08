@@ -8,16 +8,16 @@ Projekty robimy indywidualnie. Tworzycie nowego brancha `git checkout -b project
 
 Pamiętajcie żeby starać się robić zadania dobrze i prawidłowo, a nie szybko byle zrobić. Na ten moment liczy się głównie nauka i dobre przygotowanie.
 
-Zaczynacie od projektu nazwanego [preview-cards](https://github.com/infoshareacademy/jfddr7-project-html-css/tree/main/preview-cards).
-![enter image description here](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/preview-cards/design/desktop-design.jpg)
+Zaczynacie od projektu nazwanego [preview-cards](https://github.com/infoshareacademy/jfddr9-projekt-html-css/tree/main/Project1/preview-cards).
+![enter image description here](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/Project1/preview-cards/design/desktop-design.jpg)
 
 Jeśli uda Wam się go zakończyć na zajęciach to spróbujcie dodać responsywne style na ekrany mobilne.
-![mobile](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/preview-cards/design/mobile-design.jpg)
+![mobile](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/Project1/preview-cards/design/mobile-design.jpg)
 
 Informacje i pomoce odnośnie jak napisać style responsywne są na dole pliku w sekcji Dodatki. Umówmy się, że style mobilne mają się zaaplikować gdy szerokość ekranu jest mniejsza bądź równa 375px.
 
-Jeśli to Wam się uda to zapraszam śmiało do następnego projektu, czyli tego o nazwie [signup-form](https://github.com/infoshareacademy/jfddr9-projekt-html-css/tree/main/signup-form).
-![enter image description here](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/signup-form/design/desktop-design.jpg)
+Jeśli to Wam się uda to zapraszam śmiało do następnego projektu, czyli tego o nazwie [signup-form](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/Project1/signup-form).
+![enter image description here](https://github.com/infoshareacademy/jfddr9-projekt-html-css/blob/main/Project1/signup-form/design/desktop-design.jpg)
 Projekty pochodzą ze strony [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 ## Wymagania
