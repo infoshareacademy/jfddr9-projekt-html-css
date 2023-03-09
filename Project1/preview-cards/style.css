@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.rectangle {
+  width: 230px;
+  height: 430px;
+  padding: 50px 45px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 50px;
+}
+
+.text {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2;
+}
+
+.center-layout {
+  height: 300px;
+}
+
+p.title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.learn-more {
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  padding: 12px 25px;
+  border-radius: 26px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.learn-more:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.sedans .learn-more:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs .learn-more:hover {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .learn-more:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-more:active {
+  text-decoration: underline;
+}
