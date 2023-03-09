@@ -5,3 +5,8 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.card {
+  width: 33, 3%;
+  height: 200px;
+}
