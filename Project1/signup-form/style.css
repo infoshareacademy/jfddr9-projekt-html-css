@@ -1,0 +1,117 @@
+html {
+    background: url("./images/bg-intro-desktop.png") no-repeat center center fixed; 
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+}
+
+body {
+    /* width: 1440px; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.left-side {
+    color: white;
+    display: flex;
+    /* justify-content : center; */
+    flex-direction: column;
+    width: 30%;
+    padding-right: 100px;
+}
+
+.right-side {
+    display: grid;
+    justify-content: center;
+    text-align: left;
+    /* grid-template-columns: 17em; */
+}
+
+.white-box {
+    background-color: white;
+    padding: 35px 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-block-start: 150px;
+    margin-block-end: 10px;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 0px;
+}
+
+input[name$="-text" i] {
+    height: 50px;
+    width: 400px;
+    text-align: start;
+    text-indent: 25px;
+    border-radius: 5px;
+    border-color: hsl(147, 29%, 42%) 
+}
+
+#firstname, 
+#lastname,
+#email,
+#password {
+    margin-bottom: 25px;
+}
+
+#button {
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+p.trytrial {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 60px;
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
+}
+
+p.claimtrial {
+    background-color: hsl(154, 59%, 51%);
+    padding: 20px 2px;
+    text-transform: uppercase;
+    box-shadow: 0px 1.5px 0px 1.5px hsl(154, 57%, 43%);
+}
+
+p.terms {
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+span.trybold {
+    font-weight: bold;
+}
+
+span.redterms {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+#button.trytrial:hover {
+    background-color: hsl(248, 31%, 23%);
+}
+
+#button.claimtrial:hover {
+    background-color: hsl(154, 55%, 26%);
+}
