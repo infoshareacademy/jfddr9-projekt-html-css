@@ -8,10 +8,8 @@ body {
 main {
     width: 900px;
     display: flex;
-    align-self: center;
-    justify-content: center;
     margin: auto;
-    padding-top: 20%;
+    margin-top: 15%;
 }
 div {
     width: 300px;
@@ -68,3 +66,18 @@ button:hover {
 .verydarkcyan {
     color: hsl(179, 100%, 13%);
 }
+@media screen and (max-width: 800px) {
+    main {
+      flex-direction: column;
+      margin-bottom: 15%;
+    }
+    div:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+    div:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+    button {
+        margin-top: 10%;
+    }
+  }
