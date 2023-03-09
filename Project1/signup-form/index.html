@@ -11,7 +11,7 @@
   <title>Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,18 +30,17 @@
       </div>
     </div>
 
-    <div class="card-pop">
-      <p>Try it free 7 days then $20/mo. thereafter</p>
+    <div class="card-pop tile-box-shadow">
+      <p>Try it free 7 days then<br><span class="font-light">$20/mo. thereafter</span></p>
     </div>
 
-    <div class="tile-form"><input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
-      <input type="text" placeholder="Email Address">
-      <input type="text" placeholder="Password">
-
-      <input class="btn" type="button" value="Claim your free trial">
-
-      <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    <div class="tile-form tile-box-shadow">
+      <div class="tile-input"><input type="text" placeholder="First Name"></div>
+      <div class="tile-input"> <input type="text" placeholder="Last Name"></div>
+      <div class="tile-input"><input type="text" placeholder="Email Address"></div>
+      <div class="tile-input"><input type="text" placeholder="Password"></div>
+      <div class="tile-input"> <input class="btn" type="button" value="Claim your free trial"></div>
+      <p>By clicking the button, you are agreeing to our <a href="http://">Terms and Services</a></p>
     </div>
 </body>
 </main>

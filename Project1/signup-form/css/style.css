@@ -1,0 +1,71 @@
+@import url(./colors.css);
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 16px;
+	color: var(--color-light-gray);
+	background-color: var(--color-red);
+	background-image: url(../images/bg-intro-mobile.png);
+}
+main {
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	width: 300px;
+}
+h1 {
+	font-weight: 600;
+}
+.card {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.card ~ {
+	border-radius: 10px;
+}
+.card-title {
+	font-size: 12px;
+}
+.card-pop {
+	height: 80px;
+	background-color: var(--color-blue);
+	margin-bottom: 20px;
+	text-align: justify;
+}
+.font-light {
+	font-weight: lighter;
+}
+.tile-form {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 30px;
+	background-color: white;
+}
+.tile-input{
+	margin-top:20px;
+}
+.tile-form input {
+	font-weight: bolder;
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid var(--color-light-gray);
+}
+.tile-form .btn {
+	color: var(--color-light-gray);
+	text-transform: uppercase;
+	background-color: var(--color-green);
+}
+.tile-box-shadow {
+	box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
