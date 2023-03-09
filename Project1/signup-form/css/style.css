@@ -7,65 +7,95 @@
 }
 
 html {
-	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	color: var(--color-light-gray);
 	background-color: var(--color-red);
 	background-image: url(../images/bg-intro-mobile.png);
 }
 main {
-	/* position: absolute;
+	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); */
-	width: 300px;
+	transform: translate(-50%, -50%);
+	width: 330px;
 }
 h1 {
-	font-weight: 600;
+	line-height: 40px;
 }
-.card {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+p {
+	font-weight: 500;
 }
-.card ~ {
+div {
 	border-radius: 10px;
 }
-.card-title {
-	font-size: 12px;
+.card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 .card-pop {
-	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
 	background-color: var(--color-blue);
-	margin-bottom: 20px;
-	text-align: justify;
+	margin: 40px 0 20px;
+}
+.font-bold {
+	font-weight: 600;
 }
 .font-light {
-	font-weight: lighter;
+	font-weight: 300;
 }
 .tile-form {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	padding: 30px;
+	padding: 0 25px 10px;
 	background-color: white;
 }
-.tile-input{
-	margin-top:20px;
-}
-.tile-form input {
-	font-weight: bolder;
-	height: 50px;
+.tile-input input {
+	height: 52px;
 	width: 100%;
+	font-weight: bolder;
+	margin-top: 22px;
 	border-radius: 5px;
-	border: 2px solid var(--color-light-gray);
 }
-.tile-form .btn {
-	color: var(--color-light-gray);
+.tile-input-text input {
+	border: 1px solid var(--color-grayish-blue);
+	font-weight: 700;
+}
+.tile-input-text input::placeholder {
+	font-weight: 600;
+	padding: 0 15px 0;
+}
+.tile-input-btn input {
+	border: none;
 	text-transform: uppercase;
+	font-size: 14px;
+	padding: 5px 0px 0px;
+	letter-spacing: 1px;
+	box-shadow: 0 5px 0px #30bb7d;
+	color: var(--color-light-gray);
 	background-color: var(--color-green);
 }
+.tile-form p {
+	text-align: center;
+	color: var(--color-grayish-blue);
+}
 .tile-box-shadow {
-	box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
+	box-shadow: 0 8px 0px rgba(0, 0, 0, 0.2);
+}
+.tile-footer {
+	margin: 0 20px 0;
+}
+.tile-footer p {
+	margin-top: 15px;
+	font-size: 11px;
+}
+.tile-footer a {
+	text-decoration: none;
+	font-weight: 700;
+	color: var(--color-red);
 }
