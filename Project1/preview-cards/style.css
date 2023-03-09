@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    width: 1440px;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    width: 900px;
+    height: 500px;
+}
+.card {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.component-1 {
+    background-color: hsl(31, 77%, 52%);
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@@ -64,6 +63,16 @@
+    font-size: 15px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.icon {
+    width: 64px;
+    height: 40px;
+}
+.button-1 {
+    color: hsl(31, 77%, 52%);
+}
+.button-2 {
+    color: hsl(184, 100%, 22%);
+}
+.button-3 {
+    color: hsl(179, 100%, 13%);
+}

@@ -11,41 +11,47 @@
       href="./images/favicon-32x32.png"
     />
     <title>3-column preview card component</title>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <div class="grid-container">
-    <div class="grid-item-1">
-      <img src="images/icon-sedans.svg">
+    <main>
+      <div class="content">
+        <div class="component-1 card">
+          <img
+            class="icon"
+            src="images/icon-sedans.svg"
+            alt="icon of a sedan car"
+          />
+          <h2 class="heading">Sedans</h2>
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+        </div>
 
-      <h2>SEDANS</h2>
-      Sedans Choose a sedan for its affordability and excellent fuel economy.
-      Ideal for cruising in the city or on your next road trip.
-    </div>
-    <div class="grid-item-2">
-      <img src="images/icon-suvs.svg">
-      
-      <h2>SUVs</h2>
-      SUVs Take an SUV for its spacious interior, power, and versatility.
-      Perfect for your next family vacation and off-road adventures.
-    </div>
-
-    <div class="grid-item-3">
-      <img src="images/icon-luxury.svg">
-      <h2>Luxury</h2>
-      Luxury Cruise in the best car brands without the bloated prices. Enjoy the
-      enhanced comfort of a luxury rental and arrive in style.
-    </div>
-    
+        <div class="component-3 card">
+          <img
+            class="icon"
+            src="images/icon-luxury.svg"
+            alt="icon of a luxury car"
+          />
+          <h2 class="heading">Luxury</h2>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button class="button-3">Learn more</button>
+          <button class="button-3">
+            <a href="https://www.google.pl/">Learn more</a>
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
