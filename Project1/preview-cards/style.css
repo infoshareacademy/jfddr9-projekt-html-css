@@ -2,6 +2,21 @@ html {
   font-family: "Big Shoulders Display", cursive;
   font-family: "Lexend Deca", sans-serif;
 }
-div {
-  display: flex;
+body {
+    font-size: 15px
+    line-height: 25px;
 }
+.tiles-row {
+    display: flex;
+    flex-direction: row;
+}
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.darkcyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
