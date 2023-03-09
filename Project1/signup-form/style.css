@@ -23,6 +23,9 @@ main div:first-child {
 main div:last-child {
     width: 700px;
 }
+main div:last-child > div,input,button, form {
+    border-radius: 10px;
+}
 h1 {
     font-size: 4.2em;
     line-height: 120%;
@@ -35,17 +38,51 @@ span {
 }
 span.tos {
     font-weight: normal;
+    font-size: 14px;
+    color: hsl(246, 25%, 77%);
 }
 div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(248, 32%, 49%);
-    text-align: center;
+    height: 80px;
+    margin-bottom: 30px;
 }
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: inherit;
     height: 600px;
     background-color: white;
+}
+input {
+    color: hsl(249, 10%, 26%);
+    font-size: 16px;
+    font-weight: 600;
+    width: 600px;
+    height: 70px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-left: 30px;
+}
+input::placeholder {
+    color: hsl(249, 10%, 26%);
+    font-size: 16px;
+    font-weight: 500;
+}
+button {
+    width: 600px;
+    height: 70px;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+}
+a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
