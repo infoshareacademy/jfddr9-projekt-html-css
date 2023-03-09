@@ -62,7 +62,8 @@ input[name$="-text" i] {
     text-align: start;
     text-indent: 25px;
     border-radius: 5px;
-    border-color: hsl(147, 29%, 42%) 
+    border: 1px solid hsla(0, 0%, 47%, 0.377);
+    outline: none;
 }
 
 #firstname, 
@@ -104,6 +105,10 @@ span.trybold {
     font-weight: bold;
 }
 
+p.classterms {
+    color: hsl(246, 25%, 77%);
+}
+
 span.redterms {
     color: hsl(0, 100%, 74%);
     font-weight: bold;
@@ -115,4 +120,94 @@ span.redterms {
 
 #button.claimtrial:hover {
     background-color: hsl(154, 55%, 26%);
+}
+
+input:focus {
+    /* border: 1px solid red; */
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+}
+
+/* REQUIRED START */
+/* input:required:focus {
+    background: url("./images/icon-error.svg") no-repeat right;
+    background-position: 360px;
+    border: 1px solid hsl(0, 80%, 46%);
+} */
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 0%;
+    }
+
+    .left-side {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .left-underheader {
+        width: 230px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .white-box {
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 10px;
+        width: 230px;
+    }
+
+    h1 {
+        font-size: 25px;
+        width: 230px;
+    }
+
+    .input-text {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 10px;
+    }
+
+    input[name$="-text" i] {
+        height: 50px;
+        width: 200px;
+        text-align: start;
+        text-indent: 25px;
+        border-radius: 5px;
+        border: 1px solid hsla(0, 0%, 47%, 0.377);
+        outline: none;
+    }
+
+    p.trytrial {
+        background-color: hsl(248, 32%, 49%);
+        padding: 50px 0px;
+        box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
+        width: 230px;
+        display: grid;
+        justify-content: center;
+
+    }
+    
+    button.claimtrial {
+        background-color: hsl(154, 59%, 51%);
+        padding: 15px 2px;
+        width: 205px;
+        text-transform: uppercase;
+        box-shadow: 0px 1.5px 0px 1.5px hsl(154, 57%, 43%);
+        border-color: hsl(154, 59%, 51%, 0%);
+    }
+
 }
