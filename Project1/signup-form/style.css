@@ -1,0 +1,17 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+body {   
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+main {
+    display: flex;
+    
+}
