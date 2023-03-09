@@ -86,11 +86,12 @@ p.trytrial {
     box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
 }
 
-p.claimtrial {
+button.claimtrial {
     background-color: hsl(154, 59%, 51%);
     padding: 20px 2px;
     text-transform: uppercase;
     box-shadow: 0px 1.5px 0px 1.5px hsl(154, 57%, 43%);
+    border-color: hsl(154, 59%, 51%, 0%);
 }
 
 p.terms {
