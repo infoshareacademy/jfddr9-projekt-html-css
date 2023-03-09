@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     height: 100%;
 }
 body {   
@@ -9,9 +10,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 0;
+    width: 1440px;
+    margin: auto;
 }
 main {
     display: flex;
-    
+}
+main div:first-child {
+    color: white;
+}
+h1 {
+    font-size: 4.2em;
+    line-height: 120%;
+}
+p {
+    font-size: 1.4em;
 }
