@@ -1,0 +1,92 @@
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  color: white;
+}
+.cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 42px;
+  color: white;
+  font-variant: all-small-caps;
+}
+.orange {
+  width: 260px;
+  height: 400px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0% 0% 10px;
+}
+.blue {
+  width: 260px;
+  height: 400px;
+  background-color: hsl(184, 100%, 22%);
+}
+.darkblue {
+  width: 260px;
+  height: 400px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0% 10px 10px 0%;
+}
+p {
+  padding: 0px 50px 0px 40px;
+}
+.iconcar {
+  padding: 40px 50px 0px 40px;
+}
+div[class^="button"] {
+  border: 2px solid white;
+  background-color: white;
+  width: 85px;
+  height: 30px;
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-left: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  color: hsl(31, 77%, 52%);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  justify-content: center;
+}
+.button1:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: hsl(31, 77%, 52%);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.button2 {
+  color: hsl(184, 100%, 22%);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 6px;
+}
+.button2:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: hsl(184, 100%, 22%);
+  transition: background-color 0.5s, color 0.5s;
+}
+.button3 {
+  color: hsl(179, 100%, 13%);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 6px;
+}
+.button3:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: hsl(179, 100%, 13%);
+  transition: background-color 0.5s, color 0.5s;
+}
