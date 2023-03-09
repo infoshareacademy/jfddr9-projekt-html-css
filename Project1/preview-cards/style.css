@@ -39,8 +39,8 @@ p {
   padding: 50px 20px;
 }
 button {
-  font-family: "Big Shoulders Display", cursive;
-  padding: 8px 30px;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 12px 30px;
 
   background-color: hsl(0, 0%, 95%);
   border: 1px solid hsl(0, 0%, 95%);
@@ -60,6 +60,7 @@ body {
 @media screen and (max-width: 375px) {
   .container {
     flex-direction: column;
+    align-items: center;
   }
   .card {
     width: 240px;
@@ -72,5 +73,8 @@ body {
   }
   body {
     height: auto;
+  }
+  p {
+    padding-bottom: 20px;
   }
 }
