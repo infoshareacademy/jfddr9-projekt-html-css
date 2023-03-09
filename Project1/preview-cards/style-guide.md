@@ -1,5 +1,3 @@
-# Front-end Style Guide
-
 ## Layout
 
 The designs were created to the following widths:
@@ -9,11 +7,14 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-Bright orange: hsl(31, 77%, 52%)
+color:Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
 Very dark cyan: hsl(179, 100%, 13%)
+
+.container {
+display: flex;
+justify-content: center;
+}
 
 ### Neutral
 

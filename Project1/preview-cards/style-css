@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  background-color: #white;
+  height: 100vh;
+  margin: auto;
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  border-radius: 5em;
+  grid-template-rows: 300px;
+}
+
+.grid-item-1 {
+  background-color: #ff9900;
+}
+
+.grid-item-2 {
+  background-color: #298c99;
+}
+
+.grid-item-3 {
+  background-color: #30595e;
+}
