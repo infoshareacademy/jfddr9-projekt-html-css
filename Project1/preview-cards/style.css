@@ -48,14 +48,33 @@ p {
   margin: 0;
 }
 
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  color: inherit;
+  font-size: 15px;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 25px;
+}
+
+a {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .one {
   background-color: #e28525;
+  color: #e28525;
 }
 
 .two {
   background-color: #016972;
+  color: #016972;
 }
 
 .three {
   background-color: #00403f;
+  color: #00403f;
 }
