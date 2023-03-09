@@ -2,9 +2,15 @@ html {
   font-family: "Big Shoulders Display", cursive;
   font-family: "Lexend Deca", sans-serif;
 }
+main {
+    width: 1440px;
+}
 body {
     font-size: 15px
     line-height: 25px;
+}
+div {
+    border-radius: 5px 5px;
 }
 .tiles-row {
     display: flex;
@@ -12,11 +18,32 @@ body {
 }
 .orange {
   background-color: hsl(31, 77%, 52%);
+  flex-wrap: wrap;
 }
 .cyan {
   background-color: hsl(184, 100%, 22%);
+  flex-wrap: wrap;
 }
 .darkcyan {
   background-color: hsl(179, 100%, 13%);
+  flex-wrap: wrap;
+}
+.button {
+display: block;
+height: 50px;
+width: 200px;
+border: 2px solid hsl(0, 0%, 95%);
+border-radius: 20px 20px;
+color: hsl(0, 0%, 95%);
+text-align: center;
+}
+.title {
+    color: hsl(0, 0%, 95%);
+}
+.description {
+   color: hsla(0, 0%, 100%, 0.75);
+}
+.learn {
+    color:hsl(0, 0%, 95%);
 }
 
