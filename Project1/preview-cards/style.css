@@ -1,85 +1,80 @@
 .box {
-    display: flex;
-    margin: 50px 50px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    justify-content: center;
-
-
+  display: flex;
+  margin: 50px 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  justify-content: center;
 }
 
 .type {
-    
-    text-align: left;
-    padding: 50px;
-    color: hsla(0, 0%, 100%, 0.75);
-    line-height: 25px;
-    width: 180px;
-    
+  text-align: left;
+  padding: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  width: 180px;
 }
 h1 {
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-    font-family: 'Big Shoulders Display';
-    font-weight: 700px;
-    
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-weight: 700px;
 }
 .sedan {
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0  0 10px;
-    
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
 }
 .suv {
-    background-color: hsl(184, 100%, 22%)
+  background-color: hsl(184, 100%, 22%);
 }
 
 .luxury {
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px  10px 0;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
 }
 
 .more {
-    background-color: hsl(0, 0%, 95%);
-    border: none;
-    border-radius: 50px 50px;
-    text-align: center;
-    margin-top: 50px;
-    padding: 15px 35px;
-    font-weight: bold;
-    cursor: pointer;
- 
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 50px 50px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px 35px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.link-sedan {
-    color:  hsl(31, 77%, 52%);
+.more-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.more-suv {
+  color: hsl(184, 100%, 22%);
+}
+.more-lux {
+  color: hsl(179, 100%, 13%);
+}
+
+a {
+  text-decoration: none;
 }
 .more:hover {
-    color: hsl(0, 0%, 95%);
-    background-color: inherit;
-    border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 95%);
 }
-.link-suv {
-    color: hsl(184, 100%, 22%)
-}
-.link-lux {
-    color: hsl(179, 100%, 13%);
-}
-a,
-a:hover {
-    text-decoration: none;
-    color: hsl(0, 0%, 95%);
-}
-
-
 
 @media screen and (max-width: 375px) {
-    .box {
-        flex-wrap: wrap;
-    }
-    .sedan {
-        border-radius: 10px 10px  0 0;
-    }
-    .luxury {
-        
-        border-radius: 0 0 10px 10px;
-    }
+  .box {
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+  }
+  .type {
+    text-align: center;
+  }
+  .sedan {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
 }
