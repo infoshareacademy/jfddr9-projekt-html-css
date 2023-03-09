@@ -1,8 +1,12 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 0%, 95%);
     height: 100vh;
 }
 
@@ -21,7 +25,6 @@ main {
 
 .component-1 {
     background-color: hsl(31, 77%, 52%);
-    border: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -48,12 +51,11 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
-    font-size: 15px;
     line-height: 1.75;
-    margin-top: 0px;
 }
 
 button {
+    display: inline-block;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 500;
     border: 0;
@@ -88,4 +90,25 @@ button a:visited {
 
 .button-3 {
     color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 375px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .component-1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .component-3 {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
