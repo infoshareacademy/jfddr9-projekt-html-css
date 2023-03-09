@@ -1,4 +1,36 @@
+main {
+    background-color: hsl(0, 0%, 95%);
+    width: 1440px;
+    height: 1000px;
+}
+
 .content {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+.component-1 {
+    background-color: hsl(31, 77%, 52%);
+    width: 300px;
+}
+
+.component-2 {
+    background-color: hsl(184, 100%, 22%);
+    width: 300px;
+}
+
+.component-3 {
+    background-color: hsl(179, 100%, 13%);
+    width: 300px;
+}
+
+.heading {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+}
+
+p {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
 }
