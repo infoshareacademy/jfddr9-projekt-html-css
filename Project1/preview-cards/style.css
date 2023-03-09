@@ -2,3 +2,6 @@ html {
   font-family: "Big Shoulders Display", cursive;
   font-family: "Lexend Deca", sans-serif;
 }
+div {
+  display: flex;
+}
