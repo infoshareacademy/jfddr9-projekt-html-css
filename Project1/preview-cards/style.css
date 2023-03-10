@@ -1,11 +1,3 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 .section {
   max-width: 1440px;
   background-color: hsl(0, 0%, 95%);
@@ -39,11 +31,8 @@ h2 {
   color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", sans-serif;
   font-weight: 700;
-  padding: 0;
   text-transform: uppercase;
   font-size: 2.5em;
-  margin: 0px;
-  display: inline;
 }
 
 p {
@@ -51,11 +40,8 @@ p {
   font-size: 13px;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
-  padding: 0;
-  margin: 0;
   line-height: 1.8;
   letter-spacing: 0.1em;
-  display: inline;
 }
 
 .btn {
@@ -68,7 +54,6 @@ p {
   font-family: "Lexend Deca", sans-serif;
   border: 1px solid hsl(0, 0%, 95%);
   border-radius: 25px;
-  display: block;
   width: 100px;
 }
 
@@ -90,3 +75,6 @@ p {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+@media (min-width: 375px) and(max-width:1440px) {
+} ;
