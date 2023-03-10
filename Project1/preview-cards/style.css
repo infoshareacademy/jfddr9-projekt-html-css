@@ -7,6 +7,7 @@
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -76,5 +77,17 @@ p {
   border-bottom-right-radius: 15px;
 }
 
-@media (min-width: 375px) and(max-width:1440px) {
-} ;
+@media screen and (width: 375px) {
+  border-radius: 15px;
+  .one {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+
+  .three {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
