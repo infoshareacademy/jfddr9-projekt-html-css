@@ -4,13 +4,13 @@
 }
 
 .containner-inner {
-  max-width: 60em;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
 }
 
 .card {
-  width: 33, 333333%;
+  max-width: 320px;
   height: 550px;
   color: #f2f2f2;
 }
