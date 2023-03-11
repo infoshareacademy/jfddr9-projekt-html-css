@@ -18,24 +18,25 @@ h1 {
     font-size: 40px;
 }
 
-body {
+body,
+.container,
+.left-side {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+}
+
+body {
+    flex-direction: column;
     height: 100vh;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
     height: 500px;
     gap: 50px;
 }
 
 .left-side {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 500px;
     gap: 30px;
 }
