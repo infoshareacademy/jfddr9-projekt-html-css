@@ -1,0 +1,137 @@
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: white;
+  /*background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);*/
+  background: url(./images/bg-intro-desktop.png), no-repeat, fixed,
+    hsl(0, 100%, 74%);
+}
+
+.container {
+  display: inline-flex;
+  position: absolute;
+  top: 2em;
+  margin: 0 10em;
+}
+
+.description {
+    width: 45%;
+    margin: auto;
+}
+
+.form-info {
+    margin-left: 6em;
+    text-align: center;
+    
+}
+
+.info-data {
+  display: block;
+  position: absolute;
+}
+
+input {
+    padding: 1.2em 2em;
+    border: 2px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    margin: 20px 20px 10px 20px;
+    width: -webkit-fill-available;
+    display: block;
+    font-weight: 600;
+    
+}
+    
+
+.submit {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.2em 2em;
+    display: block;
+    margin: 20px 20px 10px 20px;
+    width: -webkit-fill-available;
+    font-weight: 600;
+
+}
+.submit:hover {
+  background-color: hsla(154, 59%, 51%, 0.6);
+}
+
+h1 {
+  color: white;
+  font-size: 38px;
+    line-height: 1.2em;
+}
+
+/**,
+*::after,
+*::before {
+    box-sizing: border-box;*/
+
+.trial {
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 1.5em 4em;
+}
+
+.bold-trial {
+    font-weight: 600;
+}
+
+#form {
+    background-color: white;
+    border-radius: 0.5em;
+    top: 20px;
+    position: relative;
+    padding: 10px;
+}
+.agreement,
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+}
+
+
+a {
+    text-decoration: none;
+}
+.terms {
+    font-weight: bold;
+    color:hsl(0, 100%, 74%)
+}
+
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control .exclamation-mark {
+	visibility: hidden;
+  position: absolute;
+  margin-top: 15px;
+  right: 45px;
+
+}
+
+.form-control.error .exclamation-mark {
+	visibility: visible;
+  position: absolute;
+  margin-top: 15px;
+  right: 45px;
+}
+
+.form-control .warning {
+	color: #e74c3c;
+	visibility: hidden;
+}
+
+.form-control.error .warning {
+	visibility: visible;
+}
