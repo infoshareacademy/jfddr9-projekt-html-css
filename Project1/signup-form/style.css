@@ -1,7 +1,33 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.container {
+  border: 1px solid black;
+  width: 70vw;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.form {
+  background-color: white;
+  width: 90%;
+  height: 600px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
