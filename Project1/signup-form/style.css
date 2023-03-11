@@ -1,8 +1,16 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -25,9 +33,55 @@ section {
 .form {
   background-color: white;
   width: 90%;
-  height: 600px;
+  height: 390px;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 35px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.info {
+  width: 90%;
+}
+
+.info p {
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 3px;
+  color: white;
+}
+
+.inscription {
+  text-align: center;
+  font-size: 12px;
+  color: #7e7e7e;
+  margin: 10;
+}
+
+.inscription a {
+  text-decoration: none;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
 }
