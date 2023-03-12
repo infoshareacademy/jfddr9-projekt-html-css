@@ -15,10 +15,12 @@ section {
   justify-content: center;
   font-family: "Poppins", sans-serif;
   background-image: url(images/bg-intro-desktop.png);
+  background-size: 300%;
 }
 
 .container {
   background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
   width: 70vw;
   height: 700px;
   margin: 0 auto;
@@ -82,7 +84,6 @@ section {
 
 .form {
   width: 80%;
-  /*height: 430px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +98,24 @@ input {
   padding: 15px 35px;
   margin: 10px;
   font-weight: 500;
+}
+
+.label {
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+.display-none {
+  display: none;
+}
+
+input:required:invalid {
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  border: 2px solid hsl(0, 100%, 74%);
 }
 
 input[type="submit"] {
