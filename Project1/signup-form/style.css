@@ -4,17 +4,21 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  background-image: url(images/bg-intro-desktop.png);
 }
 
 .container {
-  border: 1px solid black;
+  background-color: hsl(0, 100%, 74%);
   width: 70vw;
   height: 700px;
   margin: 0 auto;
@@ -27,14 +31,58 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
+}
+
+.box-left-inner {
+  padding-left: 6.7rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.97;
+}
+
+.box-left-inner p {
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.box-right-inner {
+  background-color: white;
+  width: 90%;
+  height: 73%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  width: 90%;
+}
+
+.info p {
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
 }
 
 .form {
-  background-color: white;
-  width: 90%;
-  height: 390px;
-  border: 1px solid red;
+  width: 80%;
+  /*height: 430px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,22 +108,9 @@ input[type="submit"] {
   color: white;
 }
 
-.info {
-  width: 90%;
-}
-
-.info p {
-  background-color: hsl(248, 32%, 49%);
-  padding: 15px 35px;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 3px;
-  color: white;
-}
-
 .inscription {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   color: #7e7e7e;
   margin: 10;
 }
