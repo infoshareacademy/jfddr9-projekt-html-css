@@ -109,3 +109,20 @@ body {
 .very-dark {
     color: var(--light-grayish-blue);
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* some problems - first card is not showing properly */
+    .grid-container {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 40px;
+        row-gap: 15px;
+    }
+}
