@@ -22,7 +22,7 @@ body {
 .tiles-grid {
   display: grid;
   grid-template-columns: repeat(4, 250px);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-rows: repeat(2, 300px);
   gap: 20px;
 }
 
@@ -66,19 +66,22 @@ body {
   color: hsl(0, 0%, 81%);
 }
 
+.personal-info {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
 .photo {
   border-radius: 50%;
   border: 1px solid white;
-}
-
-.author {
-  display: flex;
-  justify-content: center;
+  height: 40px;
 }
 
 .rev-par {
   display: flex;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 15px 5px 15px;
+  font-size: 1.5em;
 }
 
 .quote {
