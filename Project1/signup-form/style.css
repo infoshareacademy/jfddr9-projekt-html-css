@@ -66,8 +66,7 @@ input[name$="-text" i] {
     outline: none;
 }
 
-#firstname, 
-#lastname,
+#name,
 #email,
 #password {
     margin-bottom: 25px;
@@ -81,13 +80,13 @@ input[name$="-text" i] {
     transition-duration: 0.4s;
 }
 
-p.trytrial {
+p.try-trial {
     background-color: hsl(248, 32%, 49%);
     padding: 20px 60px;
     box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
 }
 
-button.claimtrial {
+button.claim-trial {
     background-color: hsl(154, 59%, 51%);
     padding: 20px 2px;
     text-transform: uppercase;
@@ -101,24 +100,24 @@ p.terms {
     text-align: center;
 }
 
-span.trybold {
+span.try-bold {
     font-weight: bold;
 }
 
-p.classterms {
+/* p.class-terms {
     color: hsl(246, 25%, 77%);
-}
+} */
 
-span.redterms {
+span.red-terms {
     color: hsl(0, 100%, 74%);
     font-weight: bold;
 }
 
-#button.trytrial:hover {
+#button.try-trial:hover {
     background-color: hsl(248, 31%, 23%);
 }
 
-#button.claimtrial:hover {
+#button.claim-trial:hover {
     background-color: hsl(154, 55%, 26%);
 }
 
@@ -191,7 +190,7 @@ input:focus {
         outline: none;
     }
 
-    p.trytrial {
+    p.try-trial {
         background-color: hsl(248, 32%, 49%);
         padding: 50px 0px;
         box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
@@ -201,7 +200,7 @@ input:focus {
 
     }
     
-    button.claimtrial {
+    button.claim-trial {
         background-color: hsl(154, 59%, 51%);
         padding: 15px 2px;
         width: 205px;
