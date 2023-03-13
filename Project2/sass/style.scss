@@ -25,9 +25,15 @@ html {
 body {
 	font-size: 13px;
 }
+// main {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// }
 .tiles {
-	height: 400px;
-	width: 1400px;
+	height: 800px;
+	width: 1600px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -149,7 +155,55 @@ body {
 	color: hsl(228, 45%, 44%);
 }
 
-// @media screen (max-width: 1440px);
-//  {
+@media (max-width: 1600px) {
+	main {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.tiles {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 70%;
+			padding: 10%px;
+			.tile {
+				padding: 4%;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	main {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.tiles {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 400px;
+			padding: 20px;
+			.tile {
+				padding: 11%;
+			}
+		}
+	}
+}
 
-// }
+@media (max-width: 975px) {
+	main {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		.tiles {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 400px;
+			padding: 20px;
+			.tile {
+				padding: 30px;
+			}
+		}
+	}
+}

@@ -19,8 +19,8 @@ body {
 }
 
 .tiles {
-  height: 400px;
-  width: 1400px;
+  height: 800px;
+  width: 1600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -142,4 +142,56 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1600px) {
+  main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  main .tiles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    padding: 10% px;
+  }
+  main .tiles .tile {
+    padding: 4%;
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  main .tiles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+  }
+  main .tiles .tile {
+    padding: 11%;
+  }
+}
+@media (max-width: 975px) {
+  main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  main .tiles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+  }
+  main .tiles .tile {
+    padding: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
