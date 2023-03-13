@@ -1,7 +1,7 @@
 body {
     width: 1440px;
     display: grid;
-    grid-template-columns: 120px 120px 120px;
+    grid-template-columns: 320px 120px 120px;
     grid-template-rows: 300px; 
     column-gap: 10px;
     row-gap: 15px;
@@ -9,6 +9,7 @@ body {
     align-items: start;
     justify-content: space-between;
     background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .daniel-card {
