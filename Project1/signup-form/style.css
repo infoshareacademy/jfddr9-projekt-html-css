@@ -1,6 +1,24 @@
 * {
     box-sizing: border-box;
 }
+div[class^="err_"] {
+    display: none;
+    color:hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 14px;
+    align-self: flex-end;
+    margin-right: 8%;
+    position: relative;
+    bottom: 15px;
+    margin-bottom: -20px;
+}
+img {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    bottom: 280%;
+    right: 20%;
+}
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -44,7 +62,7 @@ span.tos {
     font-size: 14px;
     color: hsl(246, 25%, 77%);
 }
-div div {
+.ad {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +71,15 @@ div div {
     margin-bottom: 30px;
     box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.3);
 }
-form {
+.form {
+    padding-top: 7%;
+    padding-bottom: 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
     width: inherit;
-    height: 600px;
     background-color: white;
     box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.3);
 }
@@ -71,11 +91,15 @@ input {
     height: 70px;
     border: 1px solid hsl(246, 25%, 77%);
     padding-left: 30px;
+    position: relative;
 }
 input::placeholder {
     color: hsl(249, 10%, 26%);
     font-size: 16px;
     font-weight: 500;
+}
+.err_border {
+    border: 3px solid hsl(0, 100%, 74%);
 }
 button {
     width: 600px;
