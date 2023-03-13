@@ -12,12 +12,18 @@ html {
   background-color: hsl(210, 46%, 95%);
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tiles-grid {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 250px);
   gap: 20px;
-  place-content: center;
 }
 
 .tile-1 {
