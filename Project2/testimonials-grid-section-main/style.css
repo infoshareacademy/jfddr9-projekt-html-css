@@ -2,6 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
 }
 
 .card {
@@ -17,8 +19,6 @@ body {
     justify-content: center;
     background-color: hsl(210, 46%, 95%);
     background-size: cover;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
 }
 
 [class$="-card"] {
@@ -100,4 +100,47 @@ img {
     height: 30px;
     width: 30px;
     margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 8px;
+    }
+    .card {
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 40px;
+        row-gap: 15px;
+    }
+    .daniel-card {
+        width: 40vw;
+        height: 180vw;
+    }
+    .jon-card {
+        width: 40vw;
+        height: 110vw;
+    }
+    .jean-card {
+        width: 40vw;
+        height: 100vw;
+    }
+    .patrick-card {
+        width: 40vw;
+        height: 170vw;
+    }
+    .kira-card {
+        width: 40vw;
+        height: 170vw;
+    }
+    img {
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+    }
+    [class$="-text"] {
+        padding: 20px;
+    }
 }
