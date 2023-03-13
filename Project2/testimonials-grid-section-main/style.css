@@ -18,14 +18,14 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  font-size: 13px;
 }
 .container {
-  max-width: 1020px;
+  max-width: 1120px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 25px;
-  /* margin: 150px 230px 0 230px; */
   place-content: center;
 }
 
@@ -117,25 +117,25 @@ body {
   transition: 0.5s;
 }
 h1 {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: -10px;
 }
 h2 {
-  opacity: 50%;
   font-size: 12px;
+  opacity: 50%;
   font-weight: 300;
 }
 .bold {
+  font-size: 16px;
   opacity: 90%;
-  font-size: 15px;
   font-weight: 600;
   margin-top: -40px;
 }
 .quote {
   opacity: 70%;
-  font-size: 13px;
   font-weight: 400;
   margin-bottom: -10px;
+  font-size: 13px;
 }
 img {
   border-radius: 50%;
@@ -145,10 +145,21 @@ img {
 }
 .position {
   position: relative;
-  bottom: 48px;
+  bottom: 40px;
   left: 50px;
 }
 .touchme:hover {
   color: hsl(263, 55%, 52%);
   transition: 0.5s;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 850px;
+    margin-left: 20px;
+  }
 }
