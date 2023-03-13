@@ -65,3 +65,23 @@ body {
   border-radius: 10px;
   color: hsl(0, 0%, 81%);
 }
+
+.photo {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+}
+
+.rev-par {
+  display: flex;
+  padding: 5px 20px 5px 20px;
+}
+
+.quote {
+  display: flex;
+  padding: 15px 20px 15px 20px;
+}
