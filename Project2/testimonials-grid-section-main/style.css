@@ -33,6 +33,26 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
+.name-daniel {
+    color: hsl(0, 0%, 100%);
+}
+
+.name-jon {
+    color: hsl(0, 0%, 100%);
+}
+
+.name-jean {
+    color: hsl(219, 29%, 14%);
+}
+
+.name-patrick {
+    color: hsl(0, 0%, 100%);
+}
+
+.name-kira {
+    color: hsl(219, 29%, 14%);
+}
+
 .verified-white {
     color: hsl(0, 0%, 50%);
 }
