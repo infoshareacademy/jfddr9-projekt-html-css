@@ -8,10 +8,8 @@ body {
     width: 1440px;
     height: 1080px;
     display: grid;
-    /* grid-template-columns: 28vw 300px 300px 300px; */
     grid-template-columns: repeat(4, 13vw);
     grid-template-rows: repeat(2, 25vh);
-    /* grid-template-rows: 300px;  */
     column-gap: 40px;
     row-gap: 40px;
     align-content: center;
@@ -23,40 +21,38 @@ body {
     font-size: 13px;
 }
 
+[class$="-card"] {
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 20px;
+    height: 13vw;
+    width: 13vw;
+}
+
 .daniel-card {
     background-color: hsl(263, 55%, 52%);
     width: 28vw;
-    height: 13vw;
     grid-column: 1 / 3;
     grid-row: 1;
-    gap: 20px;
 }
 
 .jon-card {
     background-color: hsl(217, 19%, 35%);
-    width: 13vw;
-    height: 13vw;
     grid-column: 3 / 3;
     grid-row: 1;
-    gap: 20px;
 }
 
 .jean-card {
     background-color: hsl(0, 0%, 100%);
-    width: 13vw;
-    height: 13vw;
     grid-column: 1 / 3;
     grid-row: 2;
-    gap: 20px;
 }
 
 .patrick-card {
     background-color: hsl(219, 29%, 14%);
     width: 28vw;
-    height: 13vw;
     grid-column: 2 / 3;
     grid-row: 2;
-    gap: 20px;
 }
 
 .kira-card {
@@ -65,48 +61,28 @@ body {
     width: 13vw;
     grid-column: 4;
     grid-row: 1;
-    gap: 20px;
-}
-
-[class$="-card"] {
-    border-radius: 10px;
 }
 
 [class$="-text"] {
     padding: 25px;
 }
 
-.daniel-text {
+#text-white,
+.name-white {
     color: hsl(0, 0%, 100%);
 }
 
-.daniel-text-2 {
-    color: hsl(0, 0%, 70%);
-}
-
-.jon-text {
-    color: hsl(0, 0%, 100%);
-}
-
-.jon-text-2 {
-    color: hsl(0, 0%, 70%);
-}
-
-.patrick-text {
-    color: hsl(0, 0%, 100%);
-}
-
-.patrick-text-2 {
-    color: hsl(0, 0%, 70%);
-}
-
+#text-blue,
 .name-blue {
     color: hsl(217, 19%, 35%);
 }
 
-.name-white {
-    color: hsl(0, 0%, 100%);
-    /* float: left; */
+#white-text-2 {
+    color: hsl(0, 0%, 70%);
+}
+
+#blue-text-2 {
+    color: hsl(217, 19%, 70%);
 }
 
 .verified-white {
