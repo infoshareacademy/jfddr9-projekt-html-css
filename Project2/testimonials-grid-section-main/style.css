@@ -110,17 +110,15 @@ body {
     color: var(--light-grayish-blue);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /* some problems - first card is not showing properly */
     .grid-container {
-        width: 375px;
+        margin-top: auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 }
