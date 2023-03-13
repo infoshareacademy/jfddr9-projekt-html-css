@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <main>
+    <div class="card">
+      <div class="card-title">
+        <h1>Learn to code by <br> watching others</h1>
+      </div>
 
-  Learn to code by watching others
+      <div class="card-subtitle">
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable. </p>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile-pop tile-box-shadow">
+        <p class="tile-pop-text font-bold">Try it free 7 days <span class="font-light">then $20/mo. thereafter</span>
+        </p>
+      </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
+      <div id="signup" class="tile-form tile-box-shadow">
+        <div class="tile-input tile-input-text"><input id="firstNameInput" type="text" placeholder="First Name">
+          <div id="form-validate" class="form-validate">
+            <small></small>
+          </div>
+        </div>
+        <div class="tile-input tile-input-text"> <input id="lastNameInput" type="text" placeholder="Last Name">
+          <div id="form-validate" class="form-validate">
+            <small></small>
+          </div>
+        </div>
+        <div class="tile-input tile-input-text"><input id="emailInput" type="text" placeholder="Email Address">
+          <div id="form-validate" class="form-validate">
+            <small></small>
+          </div>
+        </div>
+        <div class="tile-input tile-input-text "><input id="passwordInput" type="password" placeholder="Password">
+          <div id="form-validate" class="form-validate">
+            <small></small>
+          </div>
+        </div>
+        <div class="tile-input tile-input-btn"><input id="submit" class="btn" type="button"
+            value="Claim your free trial"></div>
+        <div class="tile-footer">
+          <p>By clicking the button, you are agreeing to our <a href="http://">Terms and Services</a></p>
+        </div>
+      </div>
+    </div>
 </body>
+<script src="./js/script.js"></script>
+</main>
+
 </html>
