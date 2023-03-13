@@ -9,15 +9,16 @@ body {
     height: 1080px;
     display: grid;
     /* grid-template-columns: 28vw 300px 300px 300px; */
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(4, 13vw);
+    grid-template-rows: repeat(2, 25vh);
     /* grid-template-rows: 300px;  */
     column-gap: 40px;
-    row-gap: 70px;
+    row-gap: 40px;
     align-content: center;
     align-items: start;
     justify-content: center;
     background-color: hsl(210, 46%, 95%);
+    background-size: cover;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
 }
@@ -25,6 +26,7 @@ body {
 .daniel-card {
     background-color: hsl(263, 55%, 52%);
     width: 28vw;
+    height: 13vw;
     grid-column: 1 / 3;
     grid-row: 1;
     gap: 20px;
@@ -32,6 +34,8 @@ body {
 
 .jon-card {
     background-color: hsl(217, 19%, 35%);
+    width: 13vw;
+    height: 13vw;
     grid-column: 3 / 3;
     grid-row: 1;
     gap: 20px;
@@ -40,6 +44,7 @@ body {
 .jean-card {
     background-color: hsl(0, 0%, 100%);
     width: 13vw;
+    height: 13vw;
     grid-column: 1 / 3;
     grid-row: 2;
     gap: 20px;
@@ -47,7 +52,8 @@ body {
 
 .patrick-card {
     background-color: hsl(219, 29%, 14%);
-    width: 25vw;
+    width: 28vw;
+    height: 13vw;
     grid-column: 2 / 3;
     grid-row: 2;
     gap: 20px;
@@ -56,7 +62,7 @@ body {
 .kira-card {
     background-color: hsl(0, 0%, 100%);
     height: 55vh;
-    width: 12vw;
+    width: 13vw;
     grid-column: 4;
     grid-row: 1;
     gap: 20px;
@@ -75,7 +81,7 @@ body {
 }
 
 .daniel-text-2 {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 70%);
 }
 
 .jon-text {
@@ -83,7 +89,7 @@ body {
 }
 
 .jon-text-2 {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 70%);
 }
 
 .patrick-text {
@@ -91,16 +97,16 @@ body {
 }
 
 .patrick-text-2 {
-    color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 70%);
 }
 
 .name-blue {
-    color: hsl(219, 29%, 14%);
+    color: hsl(217, 19%, 35%);
 }
 
 .name-white {
     color: hsl(0, 0%, 100%);
-    float: left;
+    /* float: left; */
 }
 
 .verified-white {
@@ -108,7 +114,7 @@ body {
 }
 
 .verified-blue {
-    color: hsl(219, 29%, 7%);
+    color: hsl(0, 0%, 50%);
 }
 
 img {
