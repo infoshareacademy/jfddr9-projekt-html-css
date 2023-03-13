@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  margin: auto;
+  padding: 90px;
+}
+
+.persons-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  padding: 2em 7em;
+  justify-content: center;
+}
+
+.person {
+  border-radius: 1em;
+  padding: 40px;
+}
+.person-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.person1 {
+  background: url("./images/bg-pattern-quotation.svg") no-repeat 80% 0%,
+    hsl(263, 55%, 52%);
+  grid-area: 1 / 1 / 2 / 3;
+  color: hsl(0, 0%, 100%);
+}
+
+.person2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: 1 / 3 / 2 / 4;
+  color: hsl(0, 0%, 100%);
+}
+
+.person3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 2 / 1 / 3 / 2;
+  color: hsl(217, 19%, 35%);
+}
+
+.person4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: 2 / 2 / 3 / 4;
+  color: hsl(0, 0%, 100%);
+}
+
+.person5 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 1 / 4 / 3 / 5;
+  color: hsl(217, 19%, 35%);
+}
+
+.info {
+  display: block;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+img {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  margin-right: 1em;
+}
+
+.person1-photo {
+  border: 2px solid hsl(0, 0%, 100%, 50%);
+}
+
+.person4-photo {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+blockquote {
+  margin: 20px auto 0px;
+  opacity: 70%;
+  line-height: 1.5em;
+}
+
+.grey50 {
+  color: hsl(0, 0%, 100%, 50%);
+}
+.name {
+  font-weight: 600;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    opacity: 70%;
+}
+.attribution a { 
+    color: hsl(263, 55%, 52%); 
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .persons-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: repeat(8, 1fr);*/
+    grid-auto-rows: auto;
+    grid-row-gap: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .person {
+    padding: 1.5em;
+    grid-area: auto;
+  }
+  .person-info {
+    font-size: 1.4em;
+  }
+  .persons-box {
+    padding: 1.1em;
+  }
+
+  blockquote {
+    line-height: 1.7em;
+    font-size: larger;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  body {
+    margin: 0 auto;
+    padding: 1.1em;
+  }
+
+  .persons-box {
+    width: 100vw;
+    padding: 1.1em;
+    grid-gap: 1.1em;
+    justify-items: stretch;
+  }
+
+  .person {
+    padding: 1.1em;
+  }
+}
