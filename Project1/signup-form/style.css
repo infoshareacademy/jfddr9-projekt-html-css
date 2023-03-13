@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -88,4 +91,31 @@ button {
 a {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 12px;
+        height: unset;
+    }
+    body {
+        width: 375px;  
+        text-align: center;
+    }
+    main {
+        flex-direction: column;
+        margin: auto;
+        padding: 10% 10% 10% 10%;
+    }
+    main div:last-child {
+        margin-top: 40px;
+        width: 340px;
+    }
+    input,button {
+        width: 300px;
+    }
+    h1 {
+        font-size: 3em;
+        line-height: 120%;
+    }
 }
