@@ -1,3 +1,16 @@
 body {
-    
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 200px; 
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.verified-white {
+    color: hsl(0, 0%, 50%);
+}
+
+.verified-blue {
+    color: hsl(219, 29%, 7%);
 }
