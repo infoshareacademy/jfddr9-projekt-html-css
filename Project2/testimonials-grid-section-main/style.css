@@ -15,3 +15,14 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+}
+
+.personal-box {
+    display: flex;
+}
