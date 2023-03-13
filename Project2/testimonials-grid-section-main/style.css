@@ -14,15 +14,63 @@
     --light-grayish-blue: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
+    background-color: var(--light-grayish-blue);
 }
+
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 50px;
+    justify-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.daniel-card {
+    grid-column: 1/3;
+    background-color: var(--moderate-violet);
+    position: relative;
+}
+
+.quotes-image {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+}
+
+.patrick-card {
+    grid-column: 2/4;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.kira-card {
+    grid-column: 4;
+    grid-row: 1/3;
 }
 
 .personal-box {
     display: flex;
+}
+
+.dark,
+.violet,
+.very-dark {
+    color: var(--white);
+}
+
+.white {
+    color: var(--very-dark-grayish-blue);
+    background-color: var(--white);
+}
+
+.dark {
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--light-grayish-blue);
 }
