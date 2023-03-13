@@ -48,6 +48,10 @@ section {
   height: 704px;
 }
 
+.tile-header {
+  display: flex;
+}
+
 .top-left {
   grid-column-start: 1;
   grid-column-end: 3;
