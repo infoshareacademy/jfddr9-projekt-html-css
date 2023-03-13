@@ -1,0 +1,104 @@
+html {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("images/bg-intro-desktop.png");
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+}
+
+.box-left {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-left h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.box-left p {
+  font-weight: 100;
+}
+
+.box-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box-header {
+  background-color: hsl(248, 32%, 49%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.box-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding-bottom: 35px;
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px 30px 0;
+}
+
+.box-input {
+  padding: 15px;
+  border-radius: 10px;
+  border-color: rgba(37, 38, 43, 0.1);
+  color: rgba(37, 38, 43, 0.6);
+  font-weight: bold;
+}
+
+.box-submit {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+.box-input:focus {
+  color: rgba(37, 38, 43, 0.8);
+}
+
+.box-submit:active {
+  background-color: hsl(154, 38%, 67%);
+  color: hsl(0, 0%, 100%);
+}
+
+.box-footer {
+  font-size: 0.6rem;
+  color: rgba(37, 38, 43, 0.6);
+  text-align: center;
+}
+
+.text-footer {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+
+.shadow {
+  box-shadow: 0px 10px 0px 0px rgba(37, 38, 43, 0.3);
+}
