@@ -1,8 +1,8 @@
 body {
     width: 1440px;
     display: grid;
-    grid-template-columns: 320px 120px 120px;
-    grid-template-rows: 300px; 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px; 
     column-gap: 10px;
     row-gap: 15px;
     align-content: center;
@@ -10,15 +10,16 @@ body {
     justify-content: space-between;
     background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
 }
 
 .daniel-card {
     background-color: hsl(263, 55%, 52%);
+    width: 300px;
 }
 
 .jon-card {
     background-color: hsl(217, 19%, 35%);
-    align-self: center;
 }
 
 .jean-card {
@@ -26,7 +27,6 @@ body {
 }
 
 .patrick-card {
-    align-self: center;
     background-color: hsl(219, 29%, 14%);
 }
 
