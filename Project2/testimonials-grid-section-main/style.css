@@ -1,10 +1,36 @@
 body {
     width: 1440px;
     display: grid;
-    grid-template-columns: 200px 100px;
-    grid-template-rows: 200px; 
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 300px; 
     column-gap: 10px;
     row-gap: 15px;
+    align-content: center;
+    align-items: start;
+    justify-content: space-between;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.daniel-card {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.jon-card {
+    background-color: hsl(217, 19%, 35%);
+    align-self: center;
+}
+
+.jean-card {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.patrick-card {
+    align-self: center;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira-card {
+    background-color: hsl(0, 0%, 100%);
 }
 
 .verified-white {
