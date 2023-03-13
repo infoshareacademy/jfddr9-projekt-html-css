@@ -12,90 +12,129 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 25px;
-  margin: 100px 120px;
+  margin: 150px 230px 0 230px;
   place-content: center;
 }
 
 .attribution {
   display: flex;
   justify-content: center;
+  margin-top: 15px;
   font-size: 11px;
   color: hsl(228, 45%, 44%);
 }
 .daniel {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 1%;
+  background-size: 75px;
   color: white;
   background-color: hsl(263, 55%, 52%);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 8px;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+  box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+}
+.daniel:hover {
+  filter: brightness(125%);
+  transition: 0.5s;
 }
 .jonathan {
   color: white;
   background-color: hsl(217, 19%, 35%);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 8px;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+  box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+}
+.jonathan:hover {
+  filter: brightness(125%);
+  transition: 0.5s;
 }
 .jeanette {
   color: hsl(219, 29%, 14%);
   background-color: hsl(0, 0%, 100%);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 8px;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 2;
+  box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+}
+.jeanette:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.5s;
 }
 .patrick {
   color: white;
   background-color: hsl(219, 29%, 14%);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 8px;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
+  box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+}
+.patrick:hover {
+  filter: brightness(125%);
+  transition: 0.5s;
 }
 .kira {
   color: hsl(219, 29%, 14%);
   background-color: hsl(0, 0%, 100%);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 8px;
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
+  box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+}
+.kira:hover {
+  background-color: rgb(236, 236, 236);
+  transition: 0.5s;
 }
 h1 {
-  font-size: 18px;
+  font-size: 14px;
+  margin-bottom: -10px;
 }
 h2 {
-  opacity: 70%;
+  opacity: 50%;
   font-size: 12px;
   font-weight: 300;
 }
 .bold {
-  font-size: 14px;
-  font-weight: 500;
+  opacity: 90%;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -40px;
 }
 .quote {
-  font-size: 12px;
-  font-weight: 300;
+  opacity: 70%;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: -10px;
 }
 img {
   border-radius: 50%;
   border: 1px solid white;
-  height: 34px;
-  width: 34px;
+  height: 33px;
+  width: 33px;
 }
 .position {
   position: relative;
-  bottom: 60px;
+  bottom: 48px;
   left: 50px;
+}
+.touchme:hover {
+  color: hsl(263, 55%, 52%);
+  transition: 0.5s;
 }
