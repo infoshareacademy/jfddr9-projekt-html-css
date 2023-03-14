@@ -1,0 +1,29 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4 , 300px);
+    grid-template-rows: repeat(2 , 300px);
+}
+.daniel {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.jonathan {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.jeanette {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.patrick {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+.kira {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
