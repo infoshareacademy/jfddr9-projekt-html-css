@@ -10,7 +10,7 @@
 .Daniel {
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 80% 10%;
   grid-column: 1 / 3;
   grid-row: 1;
   grid-row-start: 2;
