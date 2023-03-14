@@ -16,6 +16,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1rem;
   background-color: hsl(210, 46%, 95%);
+  margin: 3% 3%;
 }
 
 [class$="-card"] {
@@ -25,7 +26,6 @@ body {
   border-radius: 10px;
   padding: 2rem;
   overflow: hidden;
-  margin: 3% 3%;
 }
 
 .daniel-card {
@@ -103,11 +103,31 @@ img:hover {
   transform: scale(2);
 }
 
-.daniel-card:hover {
+.card:hover .front {
   cursor: pointer;
   transform: rotateY(180deg);
   transition: 1s;
   transform-style: preserve-3d;
+}
+
+.card:hover .daniel-card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: hsl(182, 84%, 19%);
+  color: aqua;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  margin-right: auto;
 }
 
 .jon-card:hover {
