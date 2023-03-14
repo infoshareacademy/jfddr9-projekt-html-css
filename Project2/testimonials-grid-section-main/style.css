@@ -30,17 +30,10 @@ body {
   }
   
 .daniel:hover {
+    cursor: pointer;
     transform: rotateY(180deg);
-  }
+}
   
-.daniel:hover .front {
-    display: none;
-  }
-  
-.daniel:hover .back {
-    display: block;
-  }
-
 .jonathan {
     background-color: hsl(217, 19%, 35%);
     color: aliceblue;
@@ -48,9 +41,19 @@ body {
     grid-row: 1;
     border-radius: 10px;
     padding-top: 40px;
-    
-    
+    transition: transform 0.5s ease;
+    animation: shake 0.5s ease-in-out;  
 }
+.jonathan:hover {
+    cursor: pointer;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10%, 30%, 50%, 70%, 90% { transform: translate(-2px, -2px); }
+    20%, 40%, 60%, 80% { transform: translate(2px, 2px); }
+    100% { transform: translate(0, 0); }
+}
+  
 .jeanette {
     background-color: rgb(255, 243, 243);
     color: rgb(59, 59, 59);
