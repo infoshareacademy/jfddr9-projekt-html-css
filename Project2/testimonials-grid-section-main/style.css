@@ -83,14 +83,18 @@ body {
 }
 .item2 {
   background-color: var(--grayishBlue);
+  animation: 0.2s linear infinite shake,
+    2.5s linear infinite changeColor forwards paused;
 }
 
 .item5 {
   grid-area: item5;
   background-color: var(--white);
   box-shadow: 19px 19px 50px 2px var(--lightGray);
+  animation: 1s linear backwards grow;
 }
-
+@keyframes grow {
+}
 .item3 {
   background-color: var(--white);
   box-shadow: 19px 19px 50px 2px var(--lightGray);
@@ -111,5 +115,40 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+}
+
+.roundImg:hover {
+  transition-duration: 0.3s;
+  transform: scale(2);
+}
+
+.item2:hover {
+  position: relative;
+  animation-play-state: running;
+}
+@keyframes changeColor {
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: cornflowerblue;
+  }
+  75% {
+    background-color: aquamarine;
+  }
+}
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 5px;
+  }
+  75% {
+    left: -5px;
+  }
+  100% {
+    left: 0;
   }
 }
