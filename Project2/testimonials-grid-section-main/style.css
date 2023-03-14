@@ -3,12 +3,13 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  width: 1100px;
+  height: 600px;
+  margin: 50px auto auto;
 }
 
 .main {
   display: grid;
-  width: 1100px;
-  height: 600px;
   grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
   gap: 30px;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -101,4 +102,20 @@ html {
   opacity: 70%;
   margin-top: 20px;
   line-height: 1.5;
+}
+
+@media screen and(max-width: 375px) {
+  body {
+    height: unset;
+    width: 375px;
+    padding: 10% 3% 10% 3%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+  }
 }
