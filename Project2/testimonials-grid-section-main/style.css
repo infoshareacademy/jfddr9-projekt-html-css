@@ -51,10 +51,29 @@ body {
   grid-row-start: 1;
   grid-row-end: 1;
   box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
+  animation: przecinek 15s linear infinite alternate;
 }
+/* @keyframes przecinek {
+  0% {
+    background-position: top left;
+  }
+  35% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  85% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+} */
 .daniel:hover {
   filter: brightness(125%);
   transition: 0.5s;
+  transform: scale(1.045);
 }
 .jonathan {
   color: white;
@@ -70,6 +89,7 @@ body {
 .jonathan:hover {
   filter: brightness(125%);
   transition: 0.5s;
+  transform: scale(1.045);
 }
 .jeanette {
   color: hsl(219, 29%, 14%);
@@ -83,8 +103,9 @@ body {
   box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
 }
 .jeanette:hover {
-  background-color: rgb(236, 236, 236);
+  background-color: hsl(0, 0%, 97%);
   transition: 0.5s;
+  transform: scale(1.045);
 }
 .patrick {
   color: white;
@@ -100,6 +121,7 @@ body {
 .patrick:hover {
   filter: brightness(125%);
   transition: 0.5s;
+  transform: scale(1.045);
 }
 .kira {
   color: hsl(219, 29%, 14%);
@@ -113,8 +135,9 @@ body {
   box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
 }
 .kira:hover {
-  background-color: rgb(236, 236, 236);
+  background-color: hsl(0, 0%, 97%);
   transition: 0.5s;
+  transform: scale(1.045);
 }
 h1 {
   font-size: 12px;
@@ -152,14 +175,92 @@ img {
   color: hsl(263, 55%, 52%);
   transition: 0.5s;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   body {
     font-size: 10px;
   }
   .container {
-    display: flex;
+    display: grid;
+    margin: auto 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    place-content: center;
+  }
+  .daniel {
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .jonathan {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .jeanette {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .patrick {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .kira {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+  body {
+    font-size: 10px;
+  }
+  .container {
+    display: grid;
     flex-direction: column;
-    margin-top: 850px;
-    margin-left: 20px;
+    margin: auto 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    place-content: center;
+  }
+  .daniel {
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .jonathan {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .jeanette {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .patrick {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .kira {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
 }
