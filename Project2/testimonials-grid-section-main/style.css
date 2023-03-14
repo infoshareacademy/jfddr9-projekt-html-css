@@ -64,10 +64,12 @@ body {
   display: grid;
   grid-template-areas: "item1 item1 item2 item5" "item3 item4 item4 item5";
 }
+
 .panel {
   padding: 30px;
   border-radius: 10px;
 }
+
 .roundImg {
   height: 35px;
   border-radius: 50%;
@@ -111,11 +113,114 @@ body {
     gap: 20px;
   }
 }
+
 .roundImg:hover {
   transition-duration: 0.3s;
   transform: scale(2);
 }
 
+.item1 {
+  grid-area: item1;
+  background: var(--moderateViolet) url("./images/bg-pattern-quotation.svg") top
+    1px right 70px no-repeat;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+.item1 .roundImg {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.item1:hover {
+  transform: rotateY(180deg);
+}
+.front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.back {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(-180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backImg {
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+
+.item2 {
+  background-color: var(--grayishBlue);
+  animation: 0.2s linear infinite shake,
+    2.5s linear infinite changeColor forwards paused;
+}
+.item2:hover {
+  position: relative;
+  animation-play-state: running;
+}
+@keyframes changeColor {
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: cornflowerblue;
+  }
+  75% {
+    background-color: aquamarine;
+  }
+}
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 5px;
+  }
+  75% {
+    left: -5px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.item3 {
+  transform-style: preserve-3d;
+  background-color: var(--white);
+  box-shadow: 19px 19px 50px 2px var(--lightGray);
+  transition-duration: 0.6s;
+}
+.item3:hover {
+  transform: rotate3d(1, 0, 1, 95deg);
+}
+.item4 {
+  grid-area: item4;
+  background-color: var(--blackishBlue);
+  animation-fill-mode: forwards;
+  animation: 10s move paused;
+}
+.item4:hover {
+  animation-play-state: running;
+}
+@keyframes move {
+  50% {
+    transform: translateY(1000px);
+    visibility: hidden;
+  }
+}
+.item5 {
+  grid-area: item5;
+  background-color: var(--white);
+  box-shadow: 19px 19px 50px 2px var(--lightGray);
+  transition-duration: 0.3s;
+}
+.item5:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
 /* .item1 {
   grid-area: item1;
   background: var(--moderateViolet) url("./images/bg-pattern-quotation.svg") top
@@ -153,113 +258,3 @@ body {
   opacity: 1;
   transform: rotateY(-180deg);
 } */
-
-.item1 {
-  grid-area: item1;
-  background: var(--moderateViolet) url("./images/bg-pattern-quotation.svg") top
-    1px right 70px no-repeat;
-  transform-style: preserve-3d;
-  transition-duration: 0.8s;
-}
-.item1:hover {
-  transform: rotateY(180deg);
-}
-.front {
-  backface-visibility: hidden;
-}
-.back {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  backface-visibility: hidden;
-  position: absolute;
-  transform: rotateY(-180deg);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.backImg {
-  overflow: hidden;
-  height: 100px;
-  width: 100px;
-}
-
-.item1 .roundImg {
-  border: 3px solid rgba(255, 255, 255, 0.3);
-}
-.item2 {
-  background-color: var(--grayishBlue);
-  animation: 0.2s linear infinite shake,
-    2.5s linear infinite changeColor forwards paused;
-}
-
-.item5 {
-  grid-area: item5;
-  background-color: var(--white);
-  box-shadow: 19px 19px 50px 2px var(--lightGray);
-  transition-duration: 0.3s;
-}
-.item5:hover {
-  transform: scaleX(1.05) scaleY(1.05);
-}
-
-.item3 {
-  transform-style: preserve-3d;
-  background-color: var(--white);
-  box-shadow: 19px 19px 50px 2px var(--lightGray);
-  transition-duration: 0.6s;
-}
-.item3:hover {
-  transform: rotate3d(1, 0, 1, 95deg);
-}
-
-.item4 {
-  grid-area: item4;
-}
-.patrickContent {
-  background-color: var(--blackishBlue);
-  position: absolute;
-  animation-fill-mode: forwards;
-  animation: 10s move paused;
-}
-.item4:hover .patrickContent {
-  animation-play-state: running;
-}
-@keyframes move {
-  50% {
-    transform: translateY(1000px);
-    visibility: hidden;
-  }
-}
-.item2:hover {
-  position: relative;
-  animation-play-state: running;
-}
-@keyframes changeColor {
-  25% {
-    background-color: blue;
-  }
-  50% {
-    background-color: cornflowerblue;
-  }
-  75% {
-    background-color: aquamarine;
-  }
-}
-@keyframes shake {
-  0% {
-    left: 0;
-  }
-  25% {
-    left: 5px;
-  }
-  75% {
-    left: -5px;
-  }
-  100% {
-    left: 0;
-  }
-}
