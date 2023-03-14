@@ -2,6 +2,7 @@ body {
     display: grid;
     background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
+    overflow: auto;
 }
 .container {
     text-align: auto;
@@ -10,7 +11,8 @@ body {
     grid-template-columns: repeat(4 , 320px);
     grid-template-rows: repeat(2 , 350px);
     gap: 25px;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .Daniel {
@@ -51,6 +53,7 @@ body {
     border-radius: 12px;
     grid-column: 4;
     grid-row: 1 / 3;
+    transition: transform 0,2s ease;
 }
 .img {
     width: 40px;
@@ -58,6 +61,39 @@ body {
     border-radius: 50%;
 }
 
-.img, span, p, h3 {
+.img, .tekst, .nag {
     margin: 15px;
+    
+}
+.fotka {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img:hover {
+    transform: scale(2 , 2)
+}
+.Kira:hover {
+    transform: scale(1.05 , 1.05);
+}
+.Jonathan:hover {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+
+}
+.ver {
+    margin-top: 5px;
+
+}
+@keyframes shake {
+    0% {transform: translateX(0); }
+    33% {transform: translateX(4px);}
+    66% {transform: translateX(-4px);}
+    100% {transform: translateX(0);}
+}
+
+.Patrick:hover {
+    transform: translateY(1000px);
+    transition-duration: 10s;
 }
