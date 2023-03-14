@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 div[class^="err_"] {
     display: none;
@@ -91,15 +93,17 @@ input {
     height: 70px;
     border: 1px solid hsl(246, 25%, 77%);
     padding-left: 30px;
-    position: relative;
 }
 input::placeholder {
     color: hsl(249, 10%, 26%);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .err_border {
     border: 3px solid hsl(0, 100%, 74%);
+}
+.err_border::placeholder {
+    color: hsl(0, 100%, 74%);
 }
 button {
     width: 600px;
@@ -125,11 +129,13 @@ a {
     body {
         width: 375px;  
         text-align: center;
+        background-image: url("./images/bg-intro-mobile.png");
+        background-color: hsl(0, 100%, 74%);
     }
     main {
         flex-direction: column;
         margin: auto;
-        padding: 10% 10% 10% 10%;
+        padding: 4%;
     }
     main div:last-child {
         margin-top: 40px;
