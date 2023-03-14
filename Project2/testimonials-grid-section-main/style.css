@@ -1,148 +1,222 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
 }
 
 .card {
-    width: 1440px;
-    height: 1080px;
-    display: grid;
-    grid-template-columns: repeat(4, 13vw);
-    grid-template-rows: repeat(2, 25vh);
-    column-gap: 40px;
-    row-gap: 40px;
-    align-content: center;
-    align-items: start;
-    justify-content: center;
-    background-color: hsl(210, 46%, 95%);
-    background-size: cover;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  background-color: hsl(210, 46%, 95%);
 }
 
 [class$="-card"] {
-    border-radius: 10px;
-    overflow: hidden;
-    gap: 20px;
-    height: 13vw;
-    width: 13vw;
+  /* display: flex;
+  align-items: center; */
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow: hidden;
+  margin: 3% 3%;
 }
 
 .daniel-card {
-    background-color: hsl(263, 55%, 52%);
-    width: 28vw;
-    grid-column: 1 / 3;
-    grid-row: 1;
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1 / 3;
 }
 
 .jon-card {
-    background-color: hsl(217, 19%, 35%);
-    grid-column: 3 / 3;
-    grid-row: 1;
+  background-color: hsl(217, 19%, 35%);
 }
 
 .jean-card {
-    background-color: hsl(0, 0%, 100%);
-    grid-column: 1 / 3;
-    grid-row: 2;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .patrick-card {
-    background-color: hsl(219, 29%, 14%);
-    width: 28vw;
-    grid-column: 2 / 3;
-    grid-row: 2;
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2 / 4;
+  grid-row: 2;
 }
 
 .kira-card {
-    background-color: hsl(0, 0%, 100%);
-    height: 55vh;
-    width: 13vw;
-    grid-column: 4;
-    grid-row: 1;
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4;
+  grid-row: 1/3;
 }
 
-[class$="-text"] {
-    padding: 25px;
+.quote {
+  position: absolute;
+  right: 0;
 }
+
+/* [class$="-text"] {
+  padding: 25px;
+} */
 
 #text-white,
 .name-white {
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 #text-blue,
 .name-blue {
-    color: hsl(217, 19%, 35%);
+  color: hsl(217, 19%, 35%);
 }
 
 #white-text-2 {
-    color: hsl(0, 0%, 70%);
+  color: hsl(0, 0%, 70%);
 }
 
 #blue-text-2 {
-    color: hsl(217, 19%, 70%);
+  color: hsl(217, 19%, 70%);
 }
 
 .verified-white {
-    color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 50%);
 }
 
 .verified-blue {
-    color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 50%);
 }
 
 img {
-    display: block;
-    float: left;
-    border-radius: 36px 36px;
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
+  display: block;
+  float: left;
+  border-radius: 36px 36px;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  border: 2px solid gray;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.daniel-card:hover {
+  cursor: pointer;
+  /* transform: rotateY(180deg); */
+}
+
+.jon-card:hover {
+  cursor: pointer;
+  animation: shake 1.3s;
+  animation-iteration-count: infinite;
+  /* transform: rotateY(180deg); */
+}
+
+.kira-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  animation-iteration-count: infinite;
+  /* transform: rotateY(180deg); */
+}
+
+.jean-card:hover {
+  cursor: pointer;
+  animation: spin 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotateY(180deg); */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+    background-color: hsl(219, 29%, 14%);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+    background-color: hsl(219, 29%, 14%);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+    /* background-color: hsl(217, 31%, 50%); */
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+    /* background-color: hsl(217, 59%, 66%); */
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+    /* background-color: hsl(208, 35%, 53%); */
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+    background-color: hsl(208, 50%, 50%);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+    /* background-color: hsl(208, 100%, 76%); */
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+    /* background-color: hsl(180, 33%, 48%); */
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+    /* background-color: hsl(175, 67%, 68%); */
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+    /* background-color: hsl(170, 72%, 69%); */
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+    background-color: hsl(165, 74%, 59%);
+  }
 }
 
 /* TO DO Quote Image */
 
+@media only screen and (min-width: 900px) and (max-width: 1234px) {
+  /* body {
+    font-size: 11px;
+  } */
+  .card {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .card {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    background-color: hsl(210, 46%, 95%);
+  }
+}
+
 @media only screen and (max-width: 600px) {
-    body{
-        font-size: 8px;
-    }
-    .card {
-        width: 375px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        column-gap: 40px;
-        row-gap: 15px;
-    }
-    .daniel-card {
-        width: 40vw;
-        height: 180vw;
-    }
-    .jon-card {
-        width: 40vw;
-        height: 110vw;
-    }
-    .jean-card {
-        width: 40vw;
-        height: 100vw;
-    }
-    .patrick-card {
-        width: 40vw;
-        height: 170vw;
-    }
-    .kira-card {
-        width: 40vw;
-        height: 170vw;
-    }
-    img {
-        height: 15px;
-        width: 15px;
-        margin-right: 10px;
-    }
-    [class$="-text"] {
-        padding: 20px;
-    }
+  .card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    background-color: hsl(210, 46%, 95%);
+  }
 }
