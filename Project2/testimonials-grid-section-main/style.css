@@ -108,9 +108,8 @@ body {
 }
 
 .jonathan-card:hover {
-    animation: shake 0.5s;
+    animation: shake 0.3s, background-change 10s;
     animation-iteration-count: infinite;
-    animation: background-change 5s;
 }
 
 @keyframes shake {
@@ -157,6 +156,20 @@ body {
 
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes background-change {
+    25% {
+        background-color: red;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
     }
 }
 
