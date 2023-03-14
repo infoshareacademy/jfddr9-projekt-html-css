@@ -34,6 +34,9 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 2rem;
     border-radius: 0.625rem;
     box-shadow: 25px 25px 30px -25px rgba(0, 0, 0, 0.3);
@@ -64,6 +67,10 @@ body {
     height: 30px;
     width: 30px;
     border: 2px solid var(--light-gray);
+}
+
+.photo:hover {
+    transform: scale(2);
 }
 
 .name-header {
