@@ -103,6 +103,28 @@ body {
     grid-row: 1/3;
 }
 
+
+/* TO-DO powinno rosnąc od środka, potrzebne inne podejście  */
+.kira-card:hover {
+    animation: grow-in-size;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes grow-in-size {
+    from {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    to {
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+    }
+}
+
+
 .jonathan-card {
     background-color: var(--very-dark-grayish-blue);
 }
@@ -162,15 +184,15 @@ body {
 
 @keyframes background-change {
     25% {
-        background-color: rgba(255, 0, 0, 0.514);
+        background-color: rgba(255, 0, 0, 0.404);
     }
 
     60% {
-        background-color: rgba(0, 128, 0, 0.603);
+        background-color: rgba(0, 128, 0, 0.459);
     }
 
     100% {
-        background-color: rgba(0, 0, 255, 0.562);
+        background-color: rgba(0, 0, 255, 0.445);
     }
 }
 
@@ -180,6 +202,8 @@ body {
     background-color: var(--white);
     color: var(--very-dark-grayish-blue);
 }
+
+
 
 .dark,
 .violet,
