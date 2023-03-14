@@ -137,3 +137,38 @@
     transform: translate3d(6px, 2px, -6px);
   }
 }
+
+.Jeanette {
+  transition: transform 0.5s;
+}
+
+.Jeanette:hover {
+  transform: rotate(360deg);
+}
+
+.Patrick:hover {
+  position: relative;
+  animation-name: slideDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+
+.Kira {
+  width: 260px;
+  height: 510px;
+  transition: transform 0.5s;
+}
+
+.Kira:hover {
+  transform: scale(1.1);
+}
