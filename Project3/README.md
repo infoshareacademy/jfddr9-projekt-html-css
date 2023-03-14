@@ -7,7 +7,7 @@ W zależności od tego, gdzie udało Ci się wczoraj skończyć, zacznij tam. W 
 Pamiętajcie żeby starać się robić zadania dobrze i prawidłowo, a nie szybko byle zrobić. Na ten moment liczy się głównie nauka i dobre przygotowanie.
 
 Zanim zaczniesz 
-1. Upewnij się, że twoje ostatnie zmiany są w repozytorium GitHub
+1. Upewnij się, że twoje ostatnie zmiany są w repozytorium GitHub na twoim branchu!
 2. Pobierz nowe commity z brancha `main` za pomocą `git pull main`
 3. Zrób merge z `main` za pomocą `git merge main` 
 4. Powinien pojawić się nowy folder o nazwie `Project 3`
