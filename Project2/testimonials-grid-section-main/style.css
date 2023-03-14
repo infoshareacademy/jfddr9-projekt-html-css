@@ -1,7 +1,6 @@
 .grid-container {
-  align-self: center;
-  justify-self: center;
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(6, 310px);
   grid-template-rows: repeat(4, 260px);
   gap: 20px;
@@ -18,7 +17,7 @@
   background-color: hsl(263, 55%, 52%);
   border-radius: 8px;
   color: white;
-  padding: 20px 20px 10px 20px;
+  padding: 15px 15px;
   box-shadow: 8px 5px lightgrey;
 }
 
@@ -29,7 +28,7 @@
   background-color: hsl(219, 19%, 35%);
   border-radius: 8px;
   color: white;
-  padding: 20px 20px 20px 20px;
+  padding: 15px 15px;
   box-shadow: 8px 5px lightgrey;
 }
 
@@ -40,7 +39,7 @@
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   box-shadow: 8px 5px lightgrey;
-  padding: 20px 20px 20px 20px;
+  padding: 15px 15px;
 }
 
 .Patrick {
@@ -51,7 +50,7 @@
   border-radius: 8px;
   color: white;
   box-shadow: 8px 5px lightgrey;
-  padding: 20px 20px 20px 20px;
+  padding: 15px 15px;
 }
 
 .Kira {
@@ -62,7 +61,7 @@
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   box-shadow: 8px 5px lightgrey;
-  padding: 20px 20px 20px 20px;
+  padding: 15px 15px;
 }
 
 .fotka {
@@ -73,7 +72,7 @@
 }
 
 .titles {
-  margin-left: 30px;
+  margin-left: 20px;
   flex-direction: row;
 }
 
@@ -101,4 +100,40 @@
   padding-top: 15px;
   font-family: "Open Sans";
   font-size: 12px;
+}
+
+.zoom {
+  transition: 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.Jonathan:hover {
+  animation: shake 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-6px, 2px, 6px);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(6px, 2px, -6px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-6px, 2px, 6px);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(6px, 2px, -6px);
+  }
 }
