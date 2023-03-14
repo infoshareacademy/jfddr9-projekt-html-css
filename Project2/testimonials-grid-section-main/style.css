@@ -1,7 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .attribution {
@@ -16,6 +24,12 @@ section {
   height: 100vh;
   width: 100wh;
   background-color: #edf2f8;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -50,6 +64,39 @@ section {
 
 .tile-header {
   display: flex;
+}
+
+.header-img {
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.first-and-last-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 13px;
+}
+
+.description-large-font {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.descriprion-small-font {
+  letter-spacing: 0.1rem;
+  margin-top: 0;
+  font-weight: 200;
 }
 
 .top-left {
@@ -98,6 +145,5 @@ section {
   border-radius: 15px;
 }
 
-img {
-  border-radius: 50%;
+@media screen and (min-width: 375p) {
 }
