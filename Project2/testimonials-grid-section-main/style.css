@@ -52,7 +52,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 375px) and (max-width: 700px) {
   .tiles-grid {
     display: flex;
     flex-direction: column;
@@ -113,9 +113,14 @@ body {
   flex-wrap: wrap;
 }
 
+.photo:hover {
+  transform: scale(2);
+}
+
 .photo {
   border-radius: 50%;
   border: 1px solid white;
+  width: 40px;
   height: 40px;
   margin: 25px 0 25px 25px;
 }
