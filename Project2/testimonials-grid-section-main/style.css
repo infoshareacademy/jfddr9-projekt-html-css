@@ -91,10 +91,17 @@ body {
   grid-area: item5;
   background-color: var(--white);
   box-shadow: 19px 19px 50px 2px var(--lightGray);
-  animation: 1s linear backwards grow;
+}
+.item5:hover {
+  height: auto;
+  animation: 1s linear grow forwards;
 }
 @keyframes grow {
+  100% {
+    padding-top: 10px;
+  }
 }
+
 .item3 {
   background-color: var(--white);
   box-shadow: 19px 19px 50px 2px var(--lightGray);
@@ -106,7 +113,31 @@ body {
 .item4 .roundImg {
   border: 3px solid var(--moderateViolet);
 }
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 1080px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "item1 item1 item2 "
+      "item4 item4 item5"
+      ".     item3 item5";
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .container {
+    width: 720px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "item1 item1"
+      "item4 item4"
+      "item5 item2"
+      "item5 item3";
+  }
+}
+@media only screen and (max-width: 720px) {
   .container {
     margin-top: 50px;
     width: 350px;
@@ -117,7 +148,6 @@ body {
     gap: 20px;
   }
 }
-
 .roundImg:hover {
   transition-duration: 0.3s;
   transform: scale(2);
