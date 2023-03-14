@@ -8,7 +8,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     
     
 
@@ -32,8 +32,9 @@
     
     
 }
-.row {
+.dupa {
     display: flex;
+    justify-content: center;
 }
 p {
     text-align: left;
@@ -46,7 +47,8 @@ p {
    height: 36px;
    width: 120px;
    margin-left: 15px;
-   cursor: pointer; 
+   cursor: pointer;
+   margin-top: 100px; 
 }
 .icon {
     width: 100px;
@@ -54,5 +56,9 @@ p {
 }
 h2 {
     margin-left: 15px;
+}
+.button:hover {
+    background-color: aqua;
+    color: none;
 }
 
