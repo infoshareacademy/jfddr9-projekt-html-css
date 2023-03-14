@@ -28,7 +28,6 @@ body {
   gap: 25px;
   place-content: center;
 }
-
 .attribution {
   display: flex;
   align-self: center;
@@ -53,7 +52,6 @@ body {
   grid-row-end: 1;
   box-shadow: 10px 10px 20px hsl(218deg 8% 73%);
 }
-
 .daniel:hover {
   animation: danielrotate 1.5s linear 0s 1 normal forwards;
   animation-play-state: running;
@@ -156,11 +154,6 @@ body {
     transform: rotate(5deg);
   }
 }
-/* .jonathan:hover {
-  filter: brightness(125%);
-  transition: 0.5s;
-  transform: scale(1.045);
-} */
 .jeanette {
   color: hsl(219, 29%, 14%);
   background-color: hsl(0, 0%, 100%);
@@ -201,11 +194,6 @@ body {
     margin-top: 100px;
   }
 }
-/* .patrick:hover {
-  filter: brightness(125%);
-  transition: 0.5s;
-  transform: scale(1.045);
-} */
 .kira {
   color: hsl(219, 29%, 14%);
   background-color: hsl(0, 0%, 100%);
@@ -220,11 +208,6 @@ body {
 .kira:hover {
   transform: scale(110%);
 }
-/* .kira:hover {
-  background-color: hsl(0, 0%, 97%);
-  transition: 0.5s;
-  transform: scale(1.045);
-} */
 h1 {
   font-size: 12px;
   margin-bottom: -10px;
@@ -275,7 +258,6 @@ img:hover {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 0 20px;
-    /* grid-template-columns: 1fr; */
     row-gap: 25px;
   }
   .daniel {
@@ -320,40 +302,5 @@ img:hover {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 0 20px;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 25px;
-    place-content: center; */
   }
-  /* .daniel {
-    margin-top: auto;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .jonathan {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .jeanette {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-  .patrick {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-  .kira {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
-  } */
 }
