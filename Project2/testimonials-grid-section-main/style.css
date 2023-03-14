@@ -1,18 +1,22 @@
 body {
     display: grid;
     background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .container {
-    text-align: left;
-    margin: 50px 50px;
+    text-align: auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(4 , 300px);
-    grid-template-rows: repeat(2 , 280px);
+    grid-template-columns: repeat(4 , 320px);
+    grid-template-rows: repeat(2 , 350px);
     gap: 25px;
     
     
 }
 .Daniel {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
     background-color: hsl(263, 55%, 52%);
     color: azure;
     border-radius: 12px;
@@ -52,4 +56,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.img, span, p, h3 {
+    margin: 15px;
 }
