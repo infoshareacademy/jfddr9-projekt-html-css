@@ -6,6 +6,13 @@ Plan na dziś to zrobienie responsywnego layoutu dla projektu, który robiliści
 W zależności od tego, gdzie udało Ci się wczoraj skończyć, zacznij tam. W razie problemów dawaj znać, to pomożemy :) 
 Pamiętajcie żeby starać się robić zadania dobrze i prawidłowo, a nie szybko byle zrobić. Na ten moment liczy się głównie nauka i dobre przygotowanie.
 
+Zanim zaczniesz 
+1. Upewnij się, że twoje ostatnie zmiany są w repozytorium GitHub
+2. Pobierz nowe commity z brancha `main` za pomocą `git pull main`
+3. Zrób merge z `main` za pomocą `git merge main` 
+4. Powinien pojawić się nowy folder o nazwie `Project 3`
+
+
 ### Zadanie 1 - podpowiedzi
 Strona powinna być responsywna dla szerokości od 375 do 1440 px. Staraj się w momecie kiedy element po prawej stronie, będzie wychodzić poza ekran, zawinąć go do dołu. Może on wtedy być w tych samych rozmiarach lub możesz mu ten rozmiar zmienić. Warto rozrysować sobie to.
 
