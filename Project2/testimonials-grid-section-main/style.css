@@ -104,24 +104,10 @@ body {
 }
 
 
-/* TO-DO powinno rosnąc od środka, potrzebne inne podejście  */
+/* TO-DO nie wiem jak powinno się zrobić o 10px ... */
 .kira-card:hover {
-    animation: grow-in-size;
-    animation-duration: 1s;
-    animation-direction: alternate;
-}
-
-@keyframes grow-in-size {
-    from {
-        height: 100%;
-        width: 100%;
-
-    }
-
-    to {
-        height: calc(100% + 10px);
-        width: calc(100% + 10px);
-    }
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.05);
 }
 
 
@@ -203,7 +189,25 @@ body {
     color: var(--very-dark-grayish-blue);
 }
 
+.jeanette-card {
+    animation-name: show1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 
+@keyframes show1 {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
 
 .dark,
 .violet,
