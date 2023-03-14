@@ -1,6 +1,7 @@
 body {
     background-color: antiquewhite;
     font-family: 'Barlow Semi Condensed', sans-serif;
+   
 }
 .container {
     display: grid;
@@ -21,11 +22,25 @@ body {
     grid-row: 1;
     border-radius: 10px;
     padding-top: 40px;
-    
-    
-    
+    transition: transform 1s ease;
     
 }
+.daniel .back {
+    display: none;
+  }
+  
+.daniel:hover {
+    transform: rotateY(180deg);
+  }
+  
+.daniel:hover .front {
+    display: none;
+  }
+  
+.daniel:hover .back {
+    display: block;
+  }
+
 .jonathan {
     background-color: hsl(217, 19%, 35%);
     color: aliceblue;
@@ -33,6 +48,7 @@ body {
     grid-row: 1;
     border-radius: 10px;
     padding-top: 40px;
+    
     
 }
 .jeanette {
@@ -78,6 +94,9 @@ p, h3 {
    border-radius: 50%;
    margin-left: 20px;
    border: 2px solid black
+}
+.img:hover {
+    transform: scale(2);
 } 
 p {
     opacity: 50%;
