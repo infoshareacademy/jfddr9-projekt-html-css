@@ -1,0 +1,212 @@
+html {
+    background: url("./images/bg-intro-desktop.png") no-repeat center center fixed; 
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+}
+
+body {
+    /* width: 1440px; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.left-side {
+    color: white;
+    display: flex;
+    /* justify-content : center; */
+    flex-direction: column;
+    width: 30%;
+    padding-right: 100px;
+}
+
+.right-side {
+    display: grid;
+    justify-content: center;
+    text-align: left;
+    /* grid-template-columns: 17em; */
+}
+
+.white-box {
+    background-color: white;
+    padding: 35px 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-block-start: 150px;
+    margin-block-end: 10px;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 0px;
+}
+
+input[name$="-text" i] {
+    height: 50px;
+    width: 400px;
+    text-align: start;
+    text-indent: 25px;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 47%, 0.377);
+    outline: none;
+}
+
+#name,
+#email,
+#password {
+    margin-bottom: 25px;
+}
+
+#button {
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+p.try-trial {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 60px;
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
+}
+
+button.claim-trial {
+    background-color: hsl(154, 59%, 51%);
+    padding: 20px 2px;
+    text-transform: uppercase;
+    box-shadow: 0px 1.5px 0px 1.5px hsl(154, 57%, 43%);
+    border-color: hsl(154, 59%, 51%, 0%);
+}
+
+p.terms {
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+span.try-bold {
+    font-weight: bold;
+}
+
+/* p.class-terms {
+    color: hsl(246, 25%, 77%);
+} */
+
+span.red-terms {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+#button.try-trial:hover {
+    background-color: hsl(248, 31%, 23%);
+}
+
+#button.claim-trial:hover {
+    background-color: hsl(154, 55%, 26%);
+}
+
+input:focus {
+    /* border: 1px solid red; */
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+}
+
+/* REQUIRED START */
+/* input:required:focus {
+    background: url("./images/icon-error.svg") no-repeat right;
+    background-position: 360px;
+    border: 1px solid hsl(0, 80%, 46%);
+} */
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 0%;
+    }
+
+    .left-side {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .left-underheader {
+        width: 230px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .white-box {
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 10px;
+        width: 230px;
+    }
+
+    h1 {
+        font-size: 25px;
+        width: 230px;
+    }
+
+    .input-text {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 10px;
+    }
+
+    input[name$="-text" i] {
+        height: 50px;
+        width: 200px;
+        text-align: start;
+        text-indent: 25px;
+        border-radius: 5px;
+        border: 1px solid hsla(0, 0%, 47%, 0.377);
+        outline: none;
+    }
+
+    p.try-trial {
+        background-color: hsl(248, 32%, 49%);
+        padding: 50px 0px;
+        box-shadow: 0px 6px 0px 0px rgba(0,0,0,.3);
+        width: 230px;
+        display: grid;
+        justify-content: center;
+
+    }
+    
+    button.claim-trial {
+        background-color: hsl(154, 59%, 51%);
+        padding: 15px 2px;
+        width: 205px;
+        text-transform: uppercase;
+        box-shadow: 0px 1.5px 0px 1.5px hsl(154, 57%, 43%);
+        border-color: hsl(154, 59%, 51%, 0%);
+    }
+
+}

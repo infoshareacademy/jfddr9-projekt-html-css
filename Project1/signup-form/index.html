@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -15,21 +19,43 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- <img src="./images/bg-intro-desktop.png" class="bg-desktop"> -->
+    <div class="left-side">
+    <h1>
+    Learn to code by watching others
+    </h1>
+    <div class="left-underheader">
+    <p>
+    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable. 
+    </p>
+    </div>
+    </div>
 
-  Learn to code by watching others
+    <div class="right-side">
+    <p id="button" class="try-trial">
+    <span class="try-bold">Try it free 7 days</span> then $20/mo. thereafter
+    </p>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <div class="white-box">
+    <div class="input-text">
+    <input type="text"  id="name" name="firstname-text" placeholder="First Name" required>
+    <input type="text" id="name" required  name="lastname-text" placeholder="Last Name">
+    <input type="text" id="email" required  name="email-text" placeholder="Email Address">
+    <input type="password" id="password" required  name="Password-text" placeholder="Password">
+    <button id="button" class="claim-trial">Claim your free trial</button>
+    </div>
+    
+    <!-- <p id="button" class="claimtrial">
+    Claim your free trial 
+    </p> -->
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
+    <p class="terms">
+    By clicking the button, you are agreeing to our <span class="red-terms">Terms and Services</span>
+    </p>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
