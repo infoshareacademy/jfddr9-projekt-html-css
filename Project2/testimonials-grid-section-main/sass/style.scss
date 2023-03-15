@@ -1,0 +1,312 @@
+@import url(../css/colors.css);
+
+// NAJBARDZIEJ CZASOCHŁONNE JEST STRZELENIE NA OKO PROPORCJI I WYMIARÓW.
+// Kiedy ktoś potrzebuje pomocy, mój altruistyzm nie pozwala mi kontynuować, na co gubie trochę czasu. Gdyby nie dzisiejsza operacja wyciągania karty graficznej, żeby ponownie podłączyć M.2, to pewnie bym skończył.
+
+// INFORMACJE DLA MNIE:
+// ZGUBIŁEŚ STYLOWANIE KOLORÓW KART
+// DOPRACUJ PROPORCJE
+// DOKOŃCZ MOBILE
+// WIEM, ŻE MOBILE 1ST, ALE I TAK ZAPOMINAM....
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 400;
+	color: var(--color-primary-white);
+	background-color: #edf2f8;
+	body {
+		font-size: 13px;
+		main {
+			.tiles {
+				height: auto;
+				width: 80%;
+				display: grid;
+				margin: 5vh auto;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+				grid-column-gap: 30px;
+				grid-row-gap: 30px;
+				.tile-container {
+					position: relative;
+				}
+				.tile {
+					height: 100%;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 10px;
+					border-radius: 10px;
+					padding: 30px;
+					box-shadow: 50px 50px 100px -50px var(--color-primary-blue);
+					transition: 0.8s;
+					.tile-header {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						height: 50px;
+						gap: 10px;
+						.tile-header-img {
+							img {
+								height: 30px;
+								object-fit: contain;
+								border: 1px solid var(--color-primary-white);
+								border-radius: 50%;
+							}
+							img:hover {
+								height: 60px;
+							}
+						}
+						.tile-header-text {
+							.tile-header-name {
+								font-weight: 700;
+							}
+							.tile-header-name-status {
+								font-size: 0.8rem;
+								font-weight: 500;
+							}
+						}
+					}
+					.tile-text {
+						margin-right: 10px;
+						font-size: 1.6rem;
+						font-weight: 500;
+					}
+					.tile-quote {
+						font-weight: 400;
+						color: var(--color-neutral-gray);
+						p {
+							margin-right: 20px;
+							font-weight: 300;
+						}
+					}
+				}
+
+				.tile-violet {
+					background-color: var(--color-primary-violet);
+					.tile-header-name-status {
+						color: var(--color-transparent-white);
+					}
+				}
+				.tile-blue {
+					background-color: var(--color-primary-blue);
+					.tile-header-name-status {
+						color: var(--color-transparent-white);
+					}
+				}
+				.tile-white {
+					background-color: var(--color-primary-white);
+					.tile-header-text {
+						.tile-header-name {
+							color: var(--color-primary-blue);
+						}
+						.tile-header-name-status {
+							color: var(--color-transparent-blue);
+						}
+					}
+					.tile-text {
+						color: var(--color-primary-blue);
+					}
+					.tile-header-img img {
+						border: 1px solid var(--color-neutral-gray);
+					}
+				}
+				.tile-dark {
+					background-color: var(--color-primary-blackish-blue);
+					.tile-header-img img {
+						border: 1px solid var(--color-primary-violet);
+					}
+					.tile-header-name-status {
+						color: var(--color-transparent-white);
+					}
+				}
+				.tile-front {
+					opacity: 1;
+				}
+				.tile-back {
+					position: absolute;
+					height: 100%;
+					display: flex;
+					width: 100%;
+					top: 0px;
+					left: 0px;
+					justify-content: center;
+					align-items: center;
+					opacity: 0;
+					transform: rotateY(-180deg);
+					img {
+						height: 60px;
+						width: 60px;
+					}
+				}
+				.grid-1 {
+					grid-area: 1 / 1 / 2 / 3;
+				}
+				.grid-2 {
+					grid-area: 1 / 3 / 2 / 4;
+				}
+				.grid-3 {
+					grid-area: 2 / 1 / 3 / 2;
+				}
+				.grid-4 {
+					grid-area: 2 / 2 / 3 / 4;
+				}
+				.grid-5 {
+					grid-area: 1 / 4 / 3 / 5;
+				}
+			}
+		}
+	}
+	.attribution {
+		display: none;
+		font-size: 11px;
+		text-align: center;
+	}
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+	.grid-1:hover .tile-front {
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+	.grid-1:hover .tile-back {
+		transform: rotateY(0);
+		opacity: 1;
+	}
+	.animation-vibrate:hover {
+		animation: vibrate 0.2s linear infinite;
+	}
+	.animation-grow:hover {
+		transform: scale(1.1);
+	}
+	.animation-move:hover {
+		transform: translateY(50px);
+	}
+	.animation-run:hover {
+		animation: run 11s cubic-bezier(1, -0.3, 0, 0.42);
+	}
+}
+
+@keyframes vibrate {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translate(-3px, 3px);
+	}
+	40% {
+		transform: translate(-3px, -3px);
+	}
+	60% {
+		transform: translate(3px, 3px);
+	}
+	80% {
+		transform: translate(3px, -3px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+@keyframes run {
+	0% {
+		transform: translate(0);
+	}
+	10% {
+		transform: translateY(100vh);
+	}
+	100% {
+		transform: translateY(100vh);
+	}
+}
+
+@media (max-width: 1600px) {
+	html {
+		body {
+			main {
+				margin: 30px 10%;
+				.tiles {
+					grid-template-columns: repeat(6, 1fr);
+					grid-template-rows: repeat(4, 1fr);
+					margin: auto;
+					width: 100%;
+					.grid-1 {
+						grid-area: 1 / 1 / 2 / 5;
+					}
+					.grid-2 {
+						grid-area: 1 / 5 / 2 / 7;
+					}
+					.grid-3 {
+						grid-area: 2 / 1 / 3 / 3;
+					}
+					.grid-4 {
+						grid-area: 2 / 3 / 3 / 7;
+					}
+					.grid-5 {
+						grid-area: 3 / 2 / 4 / 6;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	html {
+		body {
+			main {
+				.tiles {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-template-rows: repeat(4, 1fr);
+					width: 100%;
+					.grid-1 {
+						grid-area: 1 / 1 / 2 / 5;
+					}
+					.grid-2 {
+						grid-area: 2 / 1 / 3 / 3;
+					}
+					.grid-3 {
+						grid-area: 2 / 3 / 3 / 5;
+					}
+					.grid-4 {
+						grid-area: 3 / 1 / 4 / 5;
+					}
+					.grid-5 {
+						grid-area: 4 / 1 / 5 / 5;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 975px) {
+	html {
+		body {
+			main {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				.tiles {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					width: 400px;
+					padding: 20px;
+					.tile {
+						padding: 30px;
+					}
+				}
+				.tile-back {
+					width: 400px;
+				}
+			}
+		}
+	}
+}
