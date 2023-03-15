@@ -61,3 +61,15 @@ body {
 .img, span, p, h3 {
     margin: 15px;
 }
+
+.person {
+    display: flex;
+}
+
+.person div {
+    padding-top: 12px;
+}
+
+.person p {
+    margin: 0 15px;
+}
