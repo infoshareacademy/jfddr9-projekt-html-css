@@ -63,6 +63,7 @@ body {
 
 .img, .tekst, .nag {
     margin: 15px;
+<<<<<<< HEAD
     
 }
 .fotka {
@@ -96,4 +97,18 @@ body {
 .Patrick:hover {
     transform: translateY(1000px);
     transition-duration: 10s;
+=======
+}
+
+.person {
+    display: flex;
+}
+
+.person div {
+    padding-top: 12px;
+}
+
+.person p {
+    margin: 0 15px;
+>>>>>>> af3419fcc7b146e1a6d8a971834b3ad2424bc743
 }
