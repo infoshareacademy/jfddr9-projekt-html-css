@@ -43,8 +43,28 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-.box-show {
-  visibility: hidden;
+.box-1:hover {
+  animation: show-box-1 4s linear 0s 1 normal forwards;
+  animation-play-state: running;
+}
+
+@keyframes show-box-1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+    /* background-color: hsl(263, 55%, 52%); */
+    background-color: hsl(0, 0%, 100%);
+  }
+  50% {
+    transform: rotateY(180deg);
+    /* background-color: hsl(263, 55%, 52%); */
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(images/image-daniel-01.jpg);
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .box-2 {
@@ -124,6 +144,27 @@ body {
   grid-area: 2 / 2 / 3 / 4;
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
+}
+
+.box-4:hover {
+  animation: show-box-4 15s forwards;
+  /* animation-play-state: running; */
+}
+
+@keyframes show-box-4 {
+  0% {
+  }
+  20% {
+    transform: translateY(300px);
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+    transform: translateY(300px);
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .box-5 {
