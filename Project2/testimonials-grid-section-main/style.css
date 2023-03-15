@@ -1,8 +1,14 @@
+main {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(6, 310px);
-  grid-template-rows: repeat(4, 260px);
+  grid-template-columns: repeat(4, 310px);
+  grid-template-rows: repeat(2, 260px);
   gap: 20px;
 }
 
@@ -111,8 +117,7 @@
 }
 
 .Jonathan:hover {
-  animation: shake 0.5s;
-  transform: translate3d(0, 0, 0);
+  animation: shake 0.5s linear infinite;
 }
 
 @keyframes shake {
@@ -123,7 +128,7 @@
 
   20%,
   80% {
-    transform: translate3d(6px, 2px, -6px);
+    transform: translate3d(4px, 2px, -4px);
   }
 
   30%,
@@ -149,26 +154,19 @@
 .Patrick:hover {
   position: relative;
   animation-name: slideDown;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 @keyframes slideDown {
-  from {
-    transform: translateY(0);
+  0% {
+    transform: translateY(0vh);
   }
-  to {
-    transform: translateY(200%);
+  50% {
+    transform: translateY(80vh);
   }
-}
-
-.Kira {
-  width: 260px;
-  height: 510px;
-  transition: transform 0.5s;
-}
-
-.Kira:hover {
-  transform: scale(1.1);
+  100% {
+    transform: translateY(80vh);
+  }
 }
