@@ -25,6 +25,7 @@ main {
   color: white;
   padding: 15px 15px;
   box-shadow: 8px 5px lightgrey;
+  position: relative;
 }
 
 .Jonathan {
@@ -169,4 +170,24 @@ main {
   100% {
     transform: translateY(80vh);
   }
+}
+
+.backdaniel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.Daniel:hover .frontdaniel {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.Daniel:hover .backdaniel {
+  opacity: 1;
 }
