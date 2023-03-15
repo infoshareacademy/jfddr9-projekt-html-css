@@ -39,6 +39,7 @@ html body main .tiles .tile {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 50px 50px 100px -50px var(--color-primary-blue);
+  z-index: 10;
   transition: 0.8s;
 }
 html body main .tiles .tile .tile-header {
@@ -78,40 +79,43 @@ html body main .tiles .tile .tile-quote p {
   margin-right: 20px;
   font-weight: 300;
 }
-html body main .tiles .tile-violet {
+html body main .tiles .color-violet {
   background-color: var(--color-primary-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 5%;
 }
-html body main .tiles .tile-violet .tile-header-name-status {
+html body main .tiles .color-violet .tile-header-name-status {
   color: var(--color-transparent-white);
 }
-html body main .tiles .tile-blue {
+html body main .tiles .color-blue {
   background-color: var(--color-primary-blue);
 }
-html body main .tiles .tile-blue .tile-header-name-status {
+html body main .tiles .color-blue .tile-header-name-status {
   color: var(--color-transparent-white);
 }
-html body main .tiles .tile-white {
+html body main .tiles .color-white {
   background-color: var(--color-primary-white);
 }
-html body main .tiles .tile-white .tile-header-text .tile-header-name {
+html body main .tiles .color-white .tile-header-text .tile-header-name {
   color: var(--color-primary-blue);
 }
-html body main .tiles .tile-white .tile-header-text .tile-header-name-status {
+html body main .tiles .color-white .tile-header-text .tile-header-name-status {
   color: var(--color-transparent-blue);
 }
-html body main .tiles .tile-white .tile-text {
+html body main .tiles .color-white .tile-text {
   color: var(--color-primary-blue);
 }
-html body main .tiles .tile-white .tile-header-img img {
+html body main .tiles .color-white .tile-header-img img {
   border: 1px solid var(--color-neutral-gray);
 }
-html body main .tiles .tile-dark {
+html body main .tiles .color-dark {
   background-color: var(--color-primary-blackish-blue);
 }
-html body main .tiles .tile-dark .tile-header-img img {
-  border: 1px solid var(--color-primary-violet);
+html body main .tiles .color-dark img {
+  border: 2px solid var(--color-primary-violet);
 }
-html body main .tiles .tile-dark .tile-header-name-status {
+html body main .tiles .color-dark .tile-header-name-status {
   color: var(--color-transparent-white);
 }
 html body main .tiles .tile-front {
@@ -128,6 +132,7 @@ html body main .tiles .tile-back {
   align-items: center;
   opacity: 0;
   transform: rotateY(-180deg);
+  background-image: none;
 }
 html body main .tiles .tile-back img {
   height: 60px;

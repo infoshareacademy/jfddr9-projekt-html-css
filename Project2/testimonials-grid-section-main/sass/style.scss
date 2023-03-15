@@ -1,13 +1,9 @@
 @import url(../css/colors.css);
 
-// NAJBARDZIEJ CZASOCHŁONNE JEST STRZELENIE NA OKO PROPORCJI I WYMIARÓW.
-// Kiedy ktoś potrzebuje pomocy, mój altruistyzm nie pozwala mi kontynuować, na co gubie trochę czasu. Gdyby nie dzisiejsza operacja wyciągania karty graficznej, żeby ponownie podłączyć M.2, to pewnie bym skończył.
+//z góry przepraszam, nie jest to mój nalepszy kod, poprawię się w pracy domowej.
+//zapomniałem o mobile 1st, przez to, że miałem 3 podejścia do kodu bez commitowania na bieżąco, żeby oczyścić wszyskie zbędne linijki musiałbym spędzić sporo czasu, a wolę mimo wszystko pójść dalej i skupić się na progresowaniu przy kolejnych projektach.
 
-// INFORMACJE DLA MNIE:
-// ZGUBIŁEŚ STYLOWANIE KOLORÓW KART
-// DOPRACUJ PROPORCJE
-// DOKOŃCZ MOBILE
-// WIEM, ŻE MOBILE 1ST, ALE I TAK ZAPOMINAM....
+// A TERAZ ZAPRASZAM DO MOJEGO "ULEPA"
 
 *,
 *::after,
@@ -46,6 +42,7 @@ html {
 					border-radius: 10px;
 					padding: 30px;
 					box-shadow: 50px 50px 100px -50px var(--color-primary-blue);
+					z-index: 10;
 					transition: 0.8s;
 					.tile-header {
 						display: flex;
@@ -89,19 +86,22 @@ html {
 					}
 				}
 
-				.tile-violet {
+				.color-violet {
 					background-color: var(--color-primary-violet);
+					background-image: url(../images/bg-pattern-quotation.svg);
+					background-repeat: no-repeat;
+					background-position: 80% 5%;
 					.tile-header-name-status {
 						color: var(--color-transparent-white);
 					}
 				}
-				.tile-blue {
+				.color-blue {
 					background-color: var(--color-primary-blue);
 					.tile-header-name-status {
 						color: var(--color-transparent-white);
 					}
 				}
-				.tile-white {
+				.color-white {
 					background-color: var(--color-primary-white);
 					.tile-header-text {
 						.tile-header-name {
@@ -118,10 +118,10 @@ html {
 						border: 1px solid var(--color-neutral-gray);
 					}
 				}
-				.tile-dark {
+				.color-dark {
 					background-color: var(--color-primary-blackish-blue);
-					.tile-header-img img {
-						border: 1px solid var(--color-primary-violet);
+					img {
+						border: 2px solid var(--color-primary-violet);
 					}
 					.tile-header-name-status {
 						color: var(--color-transparent-white);
@@ -141,6 +141,7 @@ html {
 					align-items: center;
 					opacity: 0;
 					transform: rotateY(-180deg);
+					background-image: none;
 					img {
 						height: 60px;
 						width: 60px;
