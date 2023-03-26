@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-intro-desktop.png);
+  background-size: 300%;
+}
+
+.container {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  width: 70vw;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-left-inner {
+  padding-left: 6.7rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.97;
+}
+
+.box-left-inner p {
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.box-right-inner {
+  background-color: white;
+  width: 90%;
+  height: 73%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  width: 90%;
+}
+
+.info p {
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 6px 0px 1px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 35px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+.display-none {
+  display: none;
+}
+
+input:required:invalid {
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.inscription {
+  text-align: center;
+  font-size: 10px;
+  color: #7e7e7e;
+  margin: 10;
+}
+
+.inscription a {
+  text-decoration: none;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
+}
