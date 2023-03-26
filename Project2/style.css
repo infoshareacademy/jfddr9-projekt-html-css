@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  padding: 30px 5%;
+}
+
+.testimonial-grid {
+  width: fit-content;
+  margin: auto;
+}
+
+.box {
+  width: 295px;
+  height: fit-content;
+  padding: 20px 26px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 10px 15px 40px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+}
+
+.name {
+  color: hsl(0, 0%, 81%);
+}
+
+.verification {
+  color: hsla(0, 0%, 81%, 50%);
+}
+
+.name,
+.verification,
+.small-text {
+  font-weight: 500;
+}
+
+.large-text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.small-text {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: hsla(0, 0%, 81%, 70%);
+}
+
+#quote {
+  position: absolute;
+  right: 10%;
+  height: 86px;
+  top: 0px;
+  z-index: -1;
+}
+
+.purple-box {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  z-index: 0;
+}
+
+.grey-box {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.small-white-box,
+.big-white-box {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.black-box {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.black-box .header img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.white-box .name,
+.white-box .large-text {
+  color: hsl(217, 19%, 35%);
+}
+
+.small-white-box .verification,
+.big-white-box .verification {
+  color: hsla(217, 19%, 35%, 50%);
+}
+
+.small-white-box .small-text,
+.big-white-box .small-text {
+  color: hsla(217, 19%, 35%, 70%);
+}
+
+@media (min-width: 1092px) {
+}
+
+.testimonial-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.first-four {
+  display: flex;
+  flex-flow: row wrap;
+  width: 810px;
+  align-items: center;
+}
+
+.grey-box,
+.small-white-box {
+  flex-basis: 234px;
+}
+
+.purple-box,
+.black-box {
+  flex-grow: 1;
+}
+
+.big-white-box {
+  width: 234px;
+  flex-shrink: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  padding: 30px 5%;
+}
+
+.testimonial-grid {
+  width: fit-content;
+  margin: auto;
+}
+
+.box {
+  width: 295px;
+  height: fit-content;
+  padding: 20px 26px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 10px 15px 40px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  border: 2px solid hsla(0, 0%, 81%, 50%);
+}
+
+.name {
+  color: hsl(0, 0%, 81%);
+}
+
+.verification {
+  color: hsla(0, 0%, 81%, 50%);
+}
+
+.name,
+.verification,
+.small-text {
+  font-weight: 500;
+}
+
+.large-text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.small-text {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: hsla(0, 0%, 81%, 70%);
+}
+
+#quote {
+  position: absolute;
+  right: 10%;
+  height: 86px;
+  top: 0px;
+  z-index: -1;
+}
+
+.purple-box {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  z-index: 0;
+}
+
+.grey-box {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.small-white-box,
+.big-white-box {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.black-box {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.black-box .header img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.white-box .name,
+.white-box .large-text {
+  color: hsl(217, 19%, 35%);
+}
+
+.small-white-box .verification,
+.big-white-box .verification {
+  color: hsla(217, 19%, 35%, 50%);
+}
+
+.small-white-box .small-text,
+.big-white-box .small-text {
+  color: hsla(217, 19%, 35%, 70%);
+}
+
+.testimonial-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.first-four {
+  display: flex;
+  flex-flow: row wrap;
+  width: 810px;
+  align-items: center;
+}
+
+.grey-box,
+.small-white-box {
+  flex-basis: 234px;
+}
+
+.purple-box,
+.black-box {
+  flex-grow: 1;
+}
+
+.big-white-box {
+  width: 234px;
+  flex-shrink: 0;
+}
