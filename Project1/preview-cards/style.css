@@ -1,0 +1,64 @@
+.column {
+    height: 500px;
+    width: 300px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    line-height: 1.8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+
+}
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    
+    
+}
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+    
+    
+}
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    
+}
+.dupa {
+    display: flex;
+    justify-content: center;
+}
+p {
+    text-align: left;
+    margin-left: 15px;
+}
+.button {
+    opacity: 0,5;
+   text-align: center;
+   border-radius: 25px;
+   height: 36px;
+   width: 120px;
+   margin-left: 15px;
+   cursor: pointer;
+   margin-top: 100px; 
+}
+.icon {
+    width: 100px;
+    height: 70px;
+}
+h2 {
+    margin-left: 15px;
+}
+.button:hover {
+    background-color: aqua;
+    color: none;
+}
+
